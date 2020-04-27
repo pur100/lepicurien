@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.css">
     <!-- Stylesheets for Turbo "6.0.1" -->
     {{ 'styles.scss.css' | asset_url | stylesheet_tag }}
+    {{ 'custom.scss.css' | asset_url | stylesheet_tag }}
 
     <script>
       window.lazySizesConfig = window.lazySizesConfig || {};
@@ -80,6 +81,7 @@
     {% if collection.previous_product %}<link rel="prev" href="{{ collection.previous_product }}">{% endif %}
     {% if collection.next_product %}<link rel="next" href="{{ collection.next_product }}">{% endif %}
   </head>
+
 
   {% if template contains "index" %}
     {% assign feature_image = true %}
@@ -138,8 +140,12 @@
         data-shop-url="{{ shop.url }}">
 
     {% section 'header' %}
+    <div class="full_border1"></div>
+    <div class="full_border2"></div>
+
 
     <div class="mega-menu-container">
+
       {% if settings.mega_menu_1 %}
         {% section 'mega-menu-1' %}
       {% endif %}

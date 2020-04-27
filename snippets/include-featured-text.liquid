@@ -28,9 +28,20 @@
       {% endif %}
 
       {% if title != blank %}
-        <h2 class="rich-text__heading title">
+      <div class="title_container">
+        <div class="border_container">
+          <div class="border1"></div>
+          <div class="border2"></div>
+        </div>
+        <h2 class="rich-text__heading title title_box">
           {{ title }}
         </h2>
+        <div class="border_container">
+          <div class="border1"></div>
+          <div class="border2"></div>
+        </div>
+      </div>
+
         <div class="feature_divider"></div>
       {% endif %}
 

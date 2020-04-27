@@ -132,6 +132,7 @@
   </div>
 </header>
 
+
 {% if template contains "index" %}
   {% assign feature_image = true %}
 {% elsif template contains "collection" %}
@@ -195,13 +196,13 @@
               <div class="js-empty-cart__message {% if cart.item_count > 0 %}hidden{% endif %}">
                 <p class="empty_cart">{{ 'layout.general.empty_cart' | t }}</p>
               </div>
-              <form action="/checkout" 
-                    method="post" 
+              <form action="/checkout"
+                    method="post"
                     class="{% if cart.item_count == 0 %}hidden{% endif %}"
-                    data-total-discount="{{ cart.total_discount }}" 
-                    data-money-format="{{ shop.money_format | strip_html }}" 
-                    data-shop-currency="{{ shop.currency }}" 
-                    data-shop-name="{{ shop.name | escape }}" 
+                    data-total-discount="{{ cart.total_discount }}"
+                    data-money-format="{{ shop.money_format | strip_html }}"
+                    data-shop-currency="{{ shop.currency }}"
+                    data-shop-name="{{ shop.name | escape }}"
                     data-cart-form="mini-cart">
                 <a class="cart_content__continue-shopping secondary_button">
                   {{ 'cart.general.continue_shopping_link_html' | t }}
@@ -454,6 +455,7 @@
     </div>
   </div>
 </header>
+
 
 <style>
   .main_nav div.logo,

@@ -4,14 +4,14 @@
   {% assign collection_style = block.settings.collection_style %}
   {% assign collection_description = section.settings.collectiona.collection_description %}
   {% assign products_per = 3 %}
-  {% assign products_limit = 3 %}
+  {% assign products_limit = 20 %}
 {% else %}
   {% assign settingCollectiona = section.settings.collectiona %}
   {% assign titlea = collections[settingCollectiona].title %}
   {% assign collection_style = section.settings.collection_style %}
   {% assign collection_description = section.settings.collection_description %}
   {% assign products_per = 3 %}
-  {% assign products_limit = 3 %}
+  {% assign products_limit = 20 %}
 {% endif %}
 
 
@@ -79,7 +79,7 @@
     {% assign products_per_row = products_per %}
     <div class="container featured-collection__products">
       <div class="sixteen columns">
-        {% include 'product-loop' %}
+        {% include 'product-loop-special' %}
       </div>
     </div>
   {% else %}

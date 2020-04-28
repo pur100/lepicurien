@@ -1,0 +1,21 @@
+$( document ).ready(function() {
+    console.log( "ready!" );
+
+
+    $(".load_more_products").click(function(){
+      $(this).addClass("no_show")
+      $(".more_products").removeClass("no_show");
+      $(".show_less").removeClass("no_show");
+    })
+
+    $(".show_less").click(function(){
+      $(this).addClass("no_show")
+      $(".more_products").addClass("no_show");
+      $(".show_less").addClass("no_show");
+    })
+
+
+
+
+
+});

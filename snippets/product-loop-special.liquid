@@ -39,13 +39,21 @@
 {% endfor %}
 
 <div itemtype="http://schema.org/ItemList" class="product-list {{ matrixType }} clearfix equal-columns--clear equal-columns--outside-trim">
+
   {% for product in products limit: limit %}
     {% if product.id != skip_product.id %}
-      {% include 'product-thumbnail', sidebar: sidebar %}
+      {% if forloop.index0 < 6 %}
+        {% include 'product-thumbnail', sidebar: sidebar %}
+      {% else %}
+        <div class="more_products no_show" style="">{% include 'product-thumbnail', sidebar: sidebar %}</div>
+      {% endif %}
     {% endif %}
   {% endfor %}
-  {% if template contains 'collection' %}
-    {% if settings.pagination_type == 'load_more' or settings.pagination_type == 'infinite_scroll' %}
+
+
+
+  {% if template contains 'special' %}
+
       {% if paginate.next.url %}
         <span class="js-load-more load-more">
           <a href="{{ paginate.next.url }}" data-no-instant class="load-more__btn action_button continue-button">
@@ -56,7 +64,6 @@
             {% endif %}
           </a>
         </span>
-      {% endif %}
     {% endif %}
   {% elsif template contains 'search' %}
     {% if settings.search_pagination_type == 'load_more' or settings.search_pagination_type == 'infinite_scroll' %}
@@ -74,4 +81,7 @@
     {% endif %}
   {% endif %}
 </div>
-<div class="load-more__icon"></div>
+{% if products.size > 6 %}
+  <button class="load_more_products">load_more</button>
+  <button class="show_less no_show">See less</button>
+{% endif %}

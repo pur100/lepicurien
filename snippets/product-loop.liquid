@@ -44,8 +44,8 @@
       {% include 'product-thumbnail', sidebar: sidebar %}
     {% endif %}
   {% endfor %}
-  {% if template contains 'collection' %}
-    {% if settings.pagination_type == 'load_more' or settings.pagination_type == 'infinite_scroll' %}
+  {% if template contains 'special' %}
+
       {% if paginate.next.url %}
         <span class="js-load-more load-more">
           <a href="{{ paginate.next.url }}" data-no-instant class="load-more__btn action_button continue-button">
@@ -56,7 +56,6 @@
             {% endif %}
           </a>
         </span>
-      {% endif %}
     {% endif %}
   {% elsif template contains 'search' %}
     {% if settings.search_pagination_type == 'load_more' or settings.search_pagination_type == 'infinite_scroll' %}

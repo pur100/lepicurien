@@ -33,22 +33,11 @@
       {% include 'image-element', image: contact_image.src, alt: contact_image.alt %}
     </div>
   {% endif %}
-  <div class="custom-contact-form__text {% if contact_text_alignment == "center" %}center{% elsif contact_text_alignment == "right" %}align_right{% endif %}">
-    {% if contact_subheading != blank %}
-      <h3>{{ contact_subheading | escape }}</h3>
-    {% endif %}
-    {% if contact_content != blank %}
-      {{ contact_content }}
-    {% endif %}
-    {% if contact_social %}
-      <div class="custom-contact-form__social">
-        {% include 'social-icons' %}
-      </div>
-    {% endif %}
-  </div>
 </div>
 
 <div class="custom-contact-form {% if contact_text_position == 'left' %}eight offset-by-one{% elsif contact_text_position == 'right' %}eight{% else %}ten offset-by-three{% endif %} columns">
+
+
 
   {% if contact_logo %}
     <div class="custom-contact-form__logo">
@@ -85,9 +74,25 @@
     {% if section.blocks.size > 0 %}
       <div class="custom-contact-form__blocks">
 
+        <div class="custom-contact-form__text {% if contact_text_alignment == "center" %}center{% elsif contact_text_alignment == "right" %}align_right{% endif %}">
+          {% if contact_subheading != blank %}
+            <h3>{{ contact_subheading | escape }}</h3>
+          {% endif %}
+          {% if contact_content != blank %}
+            {{ contact_content }}
+          {% endif %}
+          {% if contact_social %}
+            <div class="custom-contact-form__social">
+              {% include 'social-icons' %}
+            </div>
+          {% endif %}
+        </div>
+
         {% for block in section.blocks %}
 
           <div class="contact-block contact-block--{{ block.type }}" {{ block.shopify_attributes }}>
+
+
 
           {% comment %}Text field{% endcomment %}
           {% if block.type == 'textfield' %}

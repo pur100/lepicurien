@@ -96,10 +96,13 @@
     }
   </script>
 
+
   <div class="{% if sidebar %}twelve medium-down--one-whole {% else %}sixteen{% endif %} columns equal-columns--outside-trim equal-columns--clear">
     {% for article in blog.articles %}
       {% if section.settings.blog_posts_per_row == 1 %}
         <div class="article-wrap">
+
+
         {% if article.image %}
           <div class="one-half columns alpha article_image medium-down--one-whole">
             <a href="{{ article.url }}" title="{{ article.title | escape }}">
@@ -127,11 +130,15 @@
           article
         ">
 
-        {% if article.image %}
-          <a href="{{ article.url }}" title="{{ article.title | escape }}">
-            {% include 'image-element', image: article.image, alt: image.alt %}
-          </a>
-        {% endif %}
+        {% for tag in article.tags %}
+            {% if tag contains 'cdn' %}
+              <a href="{{ article.url }}" title="{{ article.title | escape }}">
+                <img src="{{ tag }}" alt="">
+              </a>
+            {% endif %}
+        {% endfor %}
+
+
       {% endif %}
 
 

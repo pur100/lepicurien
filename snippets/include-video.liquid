@@ -127,16 +127,7 @@
           {{ pretext }}
         </div>
       {% endif %}
-      {% if title != blank %}
-        <h1 class="headline">
-          {{ title }}
-        </h1>
-      {% endif %}
-      {% if subtitle != blank %}
-        <div class="subtitle">
-          {{ subtitle }}
-        </div>
-      {% endif %}
+
       {% if button1_label != blank %}
         <a {% if button1_link != blank %}href="{{ button1_link }}"{% else %}data-play-video-button{% endif %} class="action_button first_button highlight-{{ button1_highlight }}">
           {{ button1_label }}
@@ -149,6 +140,8 @@
       {% endif %}
   {% endif %}
   </div>
+
+
 
   {% comment %} Checks there is an iframe video (YouTube or Vimeo) {% endcomment %}
   <div class="{% if video_exists %}plyr__video-embed{% endif %} {% if iframe_video != blank %}video-{{ id }}{% endif %}" data-video-element>
@@ -185,16 +178,6 @@
           {{ pretext }}
         </div>
       {% endif %}
-      {% if title != blank %}
-        <h1 class="headline">
-          {{ title }}
-        </h1>
-      {% endif %}
-      {% if subtitle != blank %}
-        <div class="subtitle">
-          {{ subtitle }}
-        </div>
-      {% endif %}
       {% if button1_label != blank %}
         <a {% if button1_link != blank %}href="{{ button1_link }}"{% else %}data-play-video-button{% endif %} class="action_button first_button highlight-{{ button1_highlight }}">
           {{ button1_label }}
@@ -222,4 +205,20 @@
 </div>
 {% endif %}
 
+<div class="container video_special">
+  {% if title != blank %}
+    <h1 class="headline">
+      {{ title }}
+    </h1>
+  {% endif %}
+  {% if subtitle != blank %}
+    <div class="subtitle">
+      {{ subtitle }}
+    </div>
+  {% endif %}
 </div>
+
+</div>
+
+
+

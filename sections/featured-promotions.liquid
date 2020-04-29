@@ -26,16 +26,8 @@
                       <div class="feature-wrap">
                         {% if block.settings.title != blank %}
                           <h2 class="title">{{ block.settings.title }}</h2>
+                          <div class="action_button">{{ block.settings.button_label }}</div>
                         {% endif %}
-                        <div class="feature-details">
-                          {% if block.settings.text != blank %}
-                            <div class="description">{{ block.settings.text }}</div>
-                          {% endif %}
-
-                          {% if block.settings.button_label != blank %}
-                            <div class="button">{{ block.settings.button_label }}</div>
-                          {% endif %}
-                        </div>
                       </div>
                   </figcaption>
                 {% elsif block.settings.link != blank %}

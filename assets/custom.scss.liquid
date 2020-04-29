@@ -1,3 +1,69 @@
+// fonts
+
+@import url(//db.onlinewebfonts.com/c/9134c840456c4db0a3489b3db0fd3298?family=Helvetica+Neue+LT+Com);
+@import url(//db.onlinewebfonts.com/c/47142c80f14926a06cb4826831f561ea?family=Versailles+LT+Std);
+@font-face {font-family: "Helvetica Neue LT Com"; src: url("//db.onlinewebfonts.com/t/9134c840456c4db0a3489b3db0fd3298.eot"); src: url("//db.onlinewebfonts.com/t/9134c840456c4db0a3489b3db0fd3298.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9134c840456c4db0a3489b3db0fd3298.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9134c840456c4db0a3489b3db0fd3298.woff") format("woff"), url("//db.onlinewebfonts.com/t/9134c840456c4db0a3489b3db0fd3298.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9134c840456c4db0a3489b3db0fd3298.svg#Helvetica Neue LT Com") format("svg"); }
+
+@font-face {
+font-family: 'Tahu! Regular';
+font-style: normal;
+font-weight: normal;
+src: url('{{ "Tahu!.ttf" | asset_url }}');;
+}
+
+@font-face {font-family: "Versailles LT Std"; src: url("//db.onlinewebfonts.com/t/47142c80f14926a06cb4826831f561ea.eot"); src: url("//db.onlinewebfonts.com/t/47142c80f14926a06cb4826831f561ea.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/47142c80f14926a06cb4826831f561ea.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/47142c80f14926a06cb4826831f561ea.woff") format("woff"), url("//db.onlinewebfonts.com/t/47142c80f14926a06cb4826831f561ea.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/47142c80f14926a06cb4826831f561ea.svg#Versailles LT Std") format("svg"); }
+
+
+h1 {
+  font-family: "Helvetica Neue LT Com"!important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 76px !important;
+  line-height: 107% !important;
+}
+
+h2 {
+  font-family: "Versailles LT Std"!important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px !important;
+  line-height: 48px !important;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Helvetica Neue LT Com"!important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px !important;
+  line-height: 34px !important;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Versailles LT Std"!important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  text-transform: uppercase;
+}
+
+
+p {
+  font-family: "Helvetica Neue LT Com"!important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px !important;
+  line-height: 150% !important;
+}
+
+
+
+
+
 .container {
   max-width: 2800px;
   padding: 20px 100px !important;
@@ -111,7 +177,14 @@
 
   #banner-1489283389016 {
     p {
-      text-align: left
+      text-align: left;
+      font-family: orator-std, monospace !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+
     }
   }
 
@@ -126,8 +199,13 @@
     }
 
     img {
-      max-height: 800px;
+      height: 844px;
+      max-height: 844px;
       max-width: 564px;
+    }
+
+    select {
+      border: 1px solid black !important;
     }
 
     #contact_form {
@@ -135,7 +213,24 @@
       margin-top: 125px;
       padding-left: 40px;
       border-left: solid 2px black;
-      height: 575px;
+      height: 618px;
+
+      .action_button {
+        border: 1px solid black !important;
+        line-height: 44px !important;
+      }
+
+      label {
+        text-transform: none !important;
+      }
+
+      h3 {
+        font-family: "Versailles LT Std" !important;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 34px !important;
+        line-height: 48px !important;
+      }
 
       .contact-block--checkbox {
         label {
@@ -148,6 +243,50 @@
     }
   }
 
+  // buttons
+
+  .action_button {
+    font-family: "Helvetica Neue LT Com"!important;
+  }
+
+  // features promotions
+
+  .feature-wrap {
+    .title {
+      font-family: "Helvetica Neue LT Com" !important;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    .action_button {
+      font-size: 16px;
+      line-height: 19px;
+      color: white;
+      border: 1px solid white;
+      padding: 17px 30px 10px 30px!important;
+      cursor: pointer !important;
+    }
+  }
+
+  // featured-content
+
+  .featured-content-section {
+    .title {
+      font-family: "Versailles LT Std" !important;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 34px !important;
+      line-height: 86px !important;
+      text-transform: uppercase;
+      background-color: black;
+      color: #FFFFFF;
+      margin: 0 5px !important;
+      padding: 0 25px;
+    }
+  }
+
 //featured products
 
 .featured-collection-section {
@@ -155,9 +294,19 @@
     display: none !important;
   }
 
+  .flickity-button-icon {
+    width: 20px!important;
+  }
+
+
   .product-details {
     .title {
       letter-spacing: 0;
+      font-family: "Versailles LT Std" !important;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px !important;
+      text-transform: none !important;
     }
   }
   .single-option-selector {
@@ -181,8 +330,76 @@
   }
 }
 
+// video
+
+.video_special {
+  .headline {
+    font-family: orator-std, monospace !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    line-height: 120% !important;
+    margin-left: 10px;
+  }
+
+  .subtitle {
+    font-family: "Helvetica Neue LT Std" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px !important;
+    line-height: 150% !important;
+    margin-left: 10px;
+
+  }
+}
+
+// newsletter
+
+.input-row-visible {
+  border: 1px black solid;
+  .right_arrow {
+    right: 10px;
+    top: 14px;
+    z-index: -10;
+  }
+}
+
+.section_form input[type="email"], .section_form input[type="text"] {
+  margin-bottom: 0 !important;
+}
+
+#shopify-section-1587031962358 {
+  .title {
+    font-family: "Helvetica Neue LT Std" !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px !important;
+    line-height: 150% !important;
+  }
+
+  .logo-bar-section {
+    margin-top: -38px !important;
+  }
+
+  .logo-bar__item {
+      width: 46px !important;
+      margin-left: 0!important;
+      margin-right: 0!important;
+  }
+}
+
 //footer
 
  .footer {
   border-top: none !important;
+
+  h6 {
+    font-family: "Versailles LT Std" !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px !important;
+    line-height: 23px !important;
+    text-transform: uppercase;
+    color: #000000;
+  }
  }

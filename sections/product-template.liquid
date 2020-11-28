@@ -3,6 +3,25 @@
 - Product template
 {% endcomment %}
 
+  <header class="banner center page-banner dark-overlay-{{ section.settings.image_darken }} full-width--{{ section.settings.wide_display }}" style="height: {{ section.settings.top_banner_height }}px; object-fit: cover;">
+      {% if collection.image %}
+        {% assign image = collection.image %}
+      {%- elsif section.settings.image -%}
+        {% assign image = section.settings.image %}
+      {%- else %}
+        {% assign image = collection.products.first.featured_image %}
+      {% endif %}
+
+      {% include 'image-element', image: image, alt: collection.title, stretch_width: true, progressive: true %}
+
+      {% if section.settings.display_collection_title %}
+        <div class="caption captionOverlay--true">
+          <h1 class="headline">{{ collection.title }}</h1>
+        </div>
+      {% endif %}
+  </header>
+
+
 <a name="pagecontent" id="pagecontent"></a>
 
 <div class="container main content product-name--{{ product.handle }}">
@@ -30,6 +49,7 @@
     {% endif %}
   </div>
 
+
   {% comment %}Check to see if sidebar should be enabled{% endcomment %}
   {% if section.blocks.size > 0 %}
     {% assign sidebar = true %}
@@ -48,6 +68,7 @@
     <div  class="product-{{ product.id }}"
           data-free-text="{{ settings.free_price_text }}"
           >
+
       <div class="section product_section clearfix js-product_section {% if section.settings.product_images_position == 'right' %}align_right--images{% endif %}" data-rv-handle="{{ product.handle }}">
 
         <div class="nine product__images columns medium-down--one-whole {% if section.settings.product_images_position == 'left' %}alpha{% else %}omega{% endif %}">
@@ -82,7 +103,7 @@
               <span>{{ variant.sku }}</span>
             </p>
           {% endif %}
-          <h1 class="product_name">{{ product.title }}</h1>
+          <h1 class="product_name">{{ product.title }} </h1>
           {% if section.settings.enable_shopify_product_badges and settings.enable_shopify_review_comments %}
             <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
           {% endif %}
@@ -138,7 +159,7 @@
           {% if section.settings.product_description_position == "top" %}
             {% if product.description != blank %}
               <div class="description">
-                {{ product.description | split: '<!-- split -->' | first }}
+                {% if product.description contains '<!-- split -->' %}{{ product.description | split: '<!-- split -->' | first  }}{% else %}{% include 'product-description-tabs' %}{% endif %}
               </div>
             {% endif %}
           {% endif %}
@@ -151,7 +172,8 @@
           {% if section.settings.product_description_position == "bottom" %}
             {% if product.description != blank %}
               <div class="description bottom">
-                {{ product.description | split: '<!-- split -->' | first }}
+
+                {% if product.description contains '<!-- split -->' %}{{ product.description | split: '<!-- split -->' | first  }}{% else %}{% include 'product-description-tabs' %}{% endif %}
               </div>
             {% endif %}
           {% endif %}
@@ -212,7 +234,8 @@
         <br class="clear" />
         <div class="section clearfix">
           <div class="description">
-            {{ product.description | split: '<!-- split -->' | last }}
+            <h1>hey</h1>
+            {% capture desctabs %}{{ product.description | split: '<!-- split -->' | last  }}{% endcapture %}{% include 'product-description-tabs' with desctabs %}
           </div>
         </div>
       {% endif %}
@@ -248,6 +271,7 @@
 
     {% endif %}
 
+
 {% if section.settings.set_product_height %}
   {% style %}
     .gallery-wrap model-viewer {
@@ -274,6 +298,49 @@
   "name": "Product",
   "class": "product-template",
   "settings": [
+    {
+      "type": "header",
+      "content": "Banner"
+    },
+    {
+      "type": "checkbox",
+      "id": "wide_display",
+      "label": "Wide display",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "featured_collection_image",
+      "label": "Show banner",
+      "info": "[Learn more](https://help.outofthesandbox.com/hc/en-us/articles/115009455768-How-to-add-a-Collection-Banner)",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "image_darken",
+      "label": "Darken image",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1800 x 1000px recommended"
+    },
+    {
+      "type": "checkbox",
+      "id": "display_collection_title",
+      "label": "Show collection title"
+    },
+    {
+      "type": "range",
+      "id": "top_banner_height",
+      "label": "Banner height (px)",
+      "min": 100,
+      "max": 1000,
+      "step": 100,
+      "default": 300
+    },
     {
       "type": "header",
       "content": "Product gallery"

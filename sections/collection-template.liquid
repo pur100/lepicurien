@@ -11,7 +11,7 @@
   .collection header {
     max-height: {{banner_height}}px;
   }
-  
+
   .dark-overlay-true:after{
     background: rgba(0, 0, 0, 0.{{ banner_overlay }});
   }
@@ -49,6 +49,8 @@
 {% endif %}
 
 <a name="pagecontent" id="pagecontent"></a>
+
+
 
 <div class="container">
   {% paginate collection.products by section.settings.pagination_limit %}
@@ -201,6 +203,7 @@
   {% endpaginate %}
 
 </div>
+
 
 {% comment %} Shopify-XR {% endcomment %}
 <script>

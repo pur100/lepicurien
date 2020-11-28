@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html lang="{{ shop.locale }}">
   <head>
-  {% include 'shop-sheriff-amp' %}
+
+	{% include 'booster-seo' %}
+  	{% include 'shop-sheriff-amp' %}
     <meta charset="utf-8">
     <meta http-equiv="cleartype" content="on">
     <meta name="robots" content="index,follow">
@@ -14,9 +16,9 @@
     <meta name="theme-color" content="{{ settings.shop_bg_color }}">
 
     {% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %}{% endif %}
-    <title>
+    {% comment %}<title>
       {% if template contains "index" %}{{ page_title }}{% else %}{{ page_title }}{% if current_tags %} {{ 'general.meta.tagged_html' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} {{ 'general.meta.page' | t: page_number: current_page }}{% endif %}{% unless page_title contains shop.name %} - {{ shop.name }}{% endunless %}{% endif %}
-    </title>
+    </title>{% endcomment %}
 
     <link rel="preconnect dns-prefetch" href="https://fonts.shopifycdn.com" />
     <link rel="preconnect dns-prefetch" href="https://cdn.shopify.com" />
@@ -29,14 +31,15 @@
 
 
     <link rel="stylesheet" href="https://use.typekit.net/nbl3dzt.css">
-    <link href="//db.onlinewebfonts.com/c/9134c840456c4db0a3489b3db0fd3298?family=Helvetica+Neue+LT+Com" rel="stylesheet" type="text/css"/>
-    <link href="//db.onlinewebfonts.com/c/47142c80f14926a06cb4826831f561ea?family=Versailles+LT+Std" rel="stylesheet" type="text/css"/>
-
+    <!--<link href="//db.onlinewebfonts.com/c/9134c840456c4db0a3489b3db0fd3298?family=Helvetica+Neue+LT+Com" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/47142c80f14926a06cb4826831f561ea?family=Versailles+LT+Std" rel="stylesheet" type="text/css"/>-->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.css">
     <!-- Stylesheets for Turbo "6.0.1" -->
     {{ 'styles.scss.css' | asset_url | stylesheet_tag }}
     {{ 'custom.scss.css' | asset_url | stylesheet_tag }}
+
+
 
     <script>
       window.lazySizesConfig = window.lazySizesConfig || {};
@@ -59,7 +62,7 @@
     </script>
 
     {% if page_description %}
-      <meta name="description" content="{% if template contains 'search' %} {{ page_title }} - {{ shop.name }} {% else %}{{ page_description | escape }}{% if current_tags %} {{ 'general.meta.tagged_html' | t: tags: meta_tags | escape }}.{% endif %}{% if current_page != 1 %} {{ 'general.meta.page' | t: page_number: current_page }}.{% endif %}{% endif %}" />
+      {% comment %}<meta name="description" content="{% if template contains 'search' %} {{ page_title }} - {{ shop.name }} {% else %}{{ page_description | escape }}{% if current_tags %} {{ 'general.meta.tagged_html' | t: tags: meta_tags | escape }}.{% endif %}{% if current_page != 1 %} {{ 'general.meta.page' | t: page_number: current_page }}.{% endif %}{% endif %}" />{% endcomment %}
     {% endif %}
 
     {% if settings.favicon != nil %}
@@ -86,6 +89,11 @@
     {% include 'social-meta-info' %}
     {% if collection.previous_product %}<link rel="prev" href="{{ collection.previous_product }}">{% endif %}
     {% if collection.next_product %}<link rel="next" href="{{ collection.next_product }}">{% endif %}
+  {% render 'weglot_hreftags' %}
+{% render 'weglot_switcher' %}
+
+  <meta name="google-site-verification" content="WKojRjQ_9fMN2lqebXa8jwmLA5jTY76gzIp2hrBBiwU" />
+    
   </head>
 
 
@@ -183,6 +191,7 @@
 
     {% unless template contains 'index' or settings.secondary_newsletter_banner == false %}
       {% section 'newsletter' %}
+      {% section 'logo-bar' %}
     {% endunless %}
 
     {% section 'footer' %}
@@ -212,6 +221,8 @@
     <script src="{{ 'utilities.js' | asset_url }}"></script>
     <script src="{{ 'app.js' | asset_url }}"></script>
     <script src="{{ 'custom.js' | asset_url }}"></script>
+
+
 
 
     {% if settings.show_shipping_calculator and template contains "cart" %}
@@ -255,6 +266,37 @@
     <script>
       {{ settings.custom_scripts }}
     </script>
+<!-- CUSTOM -->
+    <script>
+      function gup( name, url ) {
+        if (!url) url = location.href;
+        name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+        var regexS = "[\\?&]"+name+"=([^&#]*)";
+        var regex = new RegExp( regexS );
+        var results = regex.exec( url );
+        return results == null ? null : results[1];
+      }
+      window.onload = function(){
+        if(gup('section') && gup('section') == 'contact'){
+          window.location.hash = "shopify-section-1588237417117";
+        }
+      }
+    </script>
+<!-- CUSTOM -->
+<!-- SCROLL CAPTCHA -->
+    <script>
+    let str = 'challenge#contact_form',
+	url = window.location.href,
+	n = url.indexOf(str);
+    if(n != -1) {
+        if($('.shopify-challenge__container').length) {
+            $('html, body').animate({ scrollTop: ($('.shopify-challenge__container').offset().top)}, 100, 'linear');
+        } else {
+            console.log('No Captcha')
+        }
+    }
+    </script>
+<!-- SCROLL CAPTCHA -->
   </body>
 </html>
 {% endcapture %}

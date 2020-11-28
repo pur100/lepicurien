@@ -23,9 +23,48 @@
 </div>
 {% endif %}
 
+
+  <div class="twelve-columns">
+     {% if section.settings.blog_breadcrumb %}
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "@id": "{{ shop.url }}",
+                    "name": "{{ 'general.breadcrumbs.home' | t }}"
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "@id": "{{ blog.url }}",
+                    "name": "{{ blog.title }}"
+                  }
+                }
+              ]
+            }
+          </script>
+
+          <div class="breadcrumb_text left" style="margin-left: 120px;">
+            <a href="{{ shop.url }}" title="{{ shop.name | escape }}">
+              <span>{{ 'general.breadcrumbs.home' | t }}</span>
+            </a>&nbsp;<span class="icon-slash">/</span>
+            <a href="{{ blog.url }}" title="{{ blog.title | escape }}">
+              <span>{{ blog.title }}</span>
+            </a>
+          </div>
+        {% endif %}
+  </div>
+
 <a name="pagecontent" id="pagecontent"></a>
 
-<div class="container main content">
+<div class="container main content" style="margin-top: 20px;">
 {% paginate article.comments by 100 %}
 
   {% comment %}Check to see if sidebar should be enabled{% endcomment %}
@@ -35,9 +74,11 @@
     {% assign sidebar = false %}
   {% endif %}
 
-  <div class="twelve columns {% if sidebar == false %}offset-by-two{% endif %} medium-down--one-whole equal-columns--outside-trim">
+
+  <div style="padding: 20px;" class="article_bloc twelve columns {% if sidebar == false %}offset-by-two{% endif %} medium-down--one-whole equal-columns--outside-trim">
     <div class="section clearfix">
-      <div class="clearfix breadcrumb">
+      <h3 class="article_title">{{ article.title }}</h1>
+      <div class="clearfix breadcrumb" style="margin-left: 100px; margin-top:30px;">
         {% if section.settings.blog_breadcrumb %}
           <script type="application/ld+json">
             {
@@ -111,7 +152,10 @@
           {% if section.settings.blog_tags %}
             <div class="blog_meta tags">
               {% for tag in article.tags %}
-                <span><a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" title="{{ blog.title }} {{ 'blogs.general.tagged' | t }} {{ tag | escape }}">{{ tag }}</a></span>
+                {% unless tag contains 'cdn' %}
+                  <span><a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" title="{{ blog.title }} {{ 'blogs.general.tagged' | t }} {{ tag | escape }}">{{ tag }}</a></span>
+                {% endunless %}
+
               {% endfor %}
             </div>
           {% endif %}
@@ -255,81 +299,81 @@
         {% endif %}
     </div>
 
-    {% if section.settings.blog_additional_posts and blog.articles_count > 1 %}
-      <div class="section clearfix">
-        <hr />
-        <h3>{{ 'blogs.article.additional_articles' | t: title: blog.title }}</h3>
-
-        {% assign article_found = false %}
-        {% for a in blog.articles limit: 4 %}
-          {% assign skip_article = false %}
-          {% if article_found == false and forloop.last %}
-            {% assign skip_article = true %}
-          {% endif %}
-          {% if article.id == a.id %}
-            {% assign article_found = true %}
-            {% assign skip_article = true %}
-          {% endif %}
-          {% unless skip_article %}
-            <div class="one-third columns article">
-              {% if a.image %}
-                <a href="{{ a.url }}" title="{{ a.title | escape }}">
-                  {% include 'image-element', image: a.image, alt: a.image.alt %}
-                </a>
-              {% endif %}
-
-
-
-              <h5 class="sub_title">
-                <a href="{{ a.url }}" title="{{ a.title | escape }}">{{ a.title }}</a>
-              </h5>
-              <p class="blog_meta">
-                {% if section.settings.blog_byline %}
-                  <span>{{ 'blogs.article.by_author' | t: author: a.author }}</span>
-                {% endif %}
-
-                {% if section.settings.blog_date %}
-                  <span>{{ a.published_at | date: format: "month_day_year" }}</span>
-                {% endif %}
-
-                {% if section.settings.read_time %}
-                  {% include 'include-read-time', article: a %}
-                {% endif %}
-
-                {% if settings.disqus_enabled %}
-                  <span>
-                    <a href="{{ a.url }}#disqus_thread" data-disqus-identifier="{{ a.id }}" class="disqus-comment-count">{{ 'blogs.counts.comments_with_count' | t: count: 0 }}</a>
-                  </span>
-                {% elsif section.settings.blog_comment_count and a.comments_count > 0 %}
-                  <span>
-                    <a href="{{ a.url }}#comments">{{ 'blogs.counts.comments_with_count' | t: count: a.comments_count }}</a>
-                  </span>
-                {% endif %}
-              </p>
-              {% if section.settings.blog_tags %}
-                <div class="blog_meta tags">
-                  {% for tag in a.tags %}
-                    <span><a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" title="{{ blog.title | escape }} {{ 'blogs.general.tagged' | t }} {{ tag | escape }}">{{ tag }}</a></span>
-                  {% endfor %}
-                </div>
-              {% endif %}
-
-              {% if a.excerpt != blank %}
-                <div class="excerpt">{{ a.excerpt }}</div>
-              {% endif %}
-              {% if section.settings.read_more_link %}
-                <a href="{{ a.url }}" title="{{ a.title | escape }}" {% if settings.read_more_style == 'button' %}class="action_button continue-button"{% endif %}>{{ 'blogs.general.continue_reading_html' | t }}</a>
-              {% endif %}
-            </div>
-          {% endunless %}
-        {% endfor %}
-      </div>
-    {% endif %}
   </div>
+
+
+
+
 
   {% include "blog-sidebar", blog_handle: blog.handle %}
 {% endpaginate %}
 </div>
+
+
+
+<!-- Flickity HTML init -->
+<!--   {% for collection in collections %}
+
+    {% if collection.title == article.title %}
+    <h3 style="text-align: left;margin: 0 9%; border-bottom: solid 2px black;">Pour faire cette recette :</h3>
+
+    <div id="article_grid" class="flex-center">
+      {% for product in collection.products  %}
+        <div class="xrap" style="max-width: 340px">
+          {% include 'product-thumbnail-special' %}
+        </div>
+
+
+      {% endfor %}
+    </div>
+
+    {% endif %}
+  {% endfor %} -->
+
+  {% for collection in collections %}
+
+    {% if collection.title == article.title %}
+    <h3 style="text-align: left;margin: 0 9%; border-bottom: solid 2px black;">Pour faire cette recette :</h3>
+
+    <div class="carousel" style="max-width: 1200px; margin: 0 auto;" data-flickity='{ "cellAlign": "left", "groupCells": "true"  }'>
+      {% for product in collection.products  %}
+        <div class="carousel-cell" style="width: 340px">
+          {% include 'product-thumbnail-special' %}
+        </div>
+
+      {% endfor %}
+    </div>
+
+    {% endif %}
+  {% endfor %}
+
+
+  <style type="text/css">
+
+      body { font-family: sans-serif; }
+
+      .carousel {
+        margin: 50px;
+        height: 500px;
+      }
+
+
+      .carousel-cell {
+        height: 500px;
+        margin: 0px 30px;
+        border-radius: 5px;
+
+      }
+
+      .thumbnail-special .product-wrap {
+          height: 414px !important;
+          min-width: 306px !important;
+      }
+
+
+
+  </style>
+
 
 {% schema %}
 

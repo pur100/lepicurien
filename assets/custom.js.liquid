@@ -4,18 +4,23 @@ $( document ).ready(function() {
 
     $(".load_more_products").click(function(){
       $(this).addClass("no_show")
-      $(".more_products").removeClass("no_show");
-      $(".show_less").removeClass("no_show");
+      var collection_id = $(this).data("coll_id")
+      var coll = "#" + collection_id
+      var final_coll = coll.toString()
+      console.log($(final_coll))
+      $(final_coll).find(".more_products").removeClass("no_show");
+      $(final_coll).find(".show_less").removeClass("no_show");
     })
 
     $(".show_less").click(function(){
       $(this).addClass("no_show")
-      $(".more_products").addClass("no_show");
-      $(".show_less").addClass("no_show");
+      var collection_id = $(this).data("coll_id")
+      var coll = "#" + collection_id
+      var final_coll = coll.toString()
+      console.log($(final_coll))
+      $(final_coll).find(".more_products").addClass("no_show");
+      $(final_coll).find(".show_less").addClass("no_show");
+      $(final_coll).find(".load_more_products").removeClass("no_show")
     })
-
-
-
-
 
 });

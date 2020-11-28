@@ -3905,7 +3905,7 @@
     }
   },
   "current": {
-    "performance": "ludicrous",
+    "performance": "sport",
     "image_loading_style": "blur-up",
     "custom_scripts": "",
     "logo_color": "#020f4c",
@@ -4008,7 +4008,7 @@
     "headline_letter_spacing": 5,
     "slideshow_headline__font": "playfair_display_n4",
     "slideshow_headline_font_style": "uppercase",
-    "slideshow_headline_size": 39,
+    "slideshow_headline_size": 33,
     "slideshow_headline_letter_spacing": 2,
     "slideshow_headline_shadow": false,
     "slideshow_subtitle__font": "helvetica_n4",
@@ -4023,11 +4023,11 @@
     "footer_heading_font_size": 14,
     "footer_font_size": 12,
     "mega_menu_1": true,
-    "mega_menu_2": false,
-    "mega_menu_3": false,
+    "mega_menu_2": true,
+    "mega_menu_3": true,
     "mega_menu_4": true,
-    "mega_menu_5": false,
-    "search_option": "products",
+    "mega_menu_5": true,
+    "search_option": "everything",
     "search_pagination_type": "infinite_scroll",
     "enable_autocomplete": true,
     "search_to_display": 5,
@@ -4039,11 +4039,11 @@
     "sale_banner_enabled": false,
     "collection_swatches": false,
     "mobile_products_per_row": "2",
-    "pagination_type": "infinite_scroll",
+    "pagination_type": "load_more",
     "notify_me_form": false,
     "notify_me_richtext": "<p>Notify me when this product is available:<\/p>",
     "product_form_style": "dropdown",
-    "display_product_quantity": false,
+    "display_product_quantity": true,
     "limit_quantity": false,
     "display_inventory_left": false,
     "inventory_threshold": 10,
@@ -4080,10 +4080,10 @@
     "cart_message": "",
     "show_shipping_calculator": false,
     "shipping_calculator_default_country": "United States",
-    "show_multiple_currencies": true,
+    "show_multiple_currencies": false,
     "currency_format": "money_format",
     "supported_currencies": "USD CAD AUD GBP EUR JPY",
-    "default_currency": "USD",
+    "default_currency": "EUR",
     "mailchimp_link": "",
     "secondary_newsletter_banner": true,
     "newsletter_popup": false,
@@ -4109,9 +4109,9 @@
     "newsletter_popup_days": "30",
     "twitter_link": "",
     "facebook_link": "https:\/\/www.facebook.com\/lepicurien34\/",
-    "youtube_link": "",
+    "youtube_link": "https:\/\/www.youtube.com\/channel\/UCQPqkQpw8dF52-X6ueWt2Nw",
     "vimeo_link": "",
-    "pinterest_link": "",
+    "pinterest_link": "https:\/\/www.pinterest.fr\/lepicurien0035\/",
     "tumblr_link": "",
     "instagram_link": "https:\/\/www.instagram.com\/lepicurien.officiel\/",
     "snapchat_link": "",
@@ -4119,22 +4119,22 @@
     "linkedin_link": "",
     "email_link": "",
     "og_image_fallback": "",
-    "favicon": "",
+    "favicon": "shopify:\/\/shop_images\/Favicon-LEpicurien-2.jpg",
     "disqus_enabled": false,
     "disqus_shortname": "",
     "checkout_header_image": "",
-    "checkout_logo_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/image_2_3.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "medium",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#fff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_image": "",
-    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_sidebar_background_color": "#ffffff",
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-    "checkout_accent_color": "#197bbd",
-    "checkout_button_color": "#197bbd",
+    "checkout_accent_color": "#010315",
+    "checkout_button_color": "#010315",
     "checkout_error_color": "#e32c2b",
     "quick_shop_zoom": false,
     "quick_shop_gallery_arrows": true,
@@ -4348,16 +4348,14 @@
       "header": {
         "type": "header",
         "settings": {
-          "promo_text": "<p>livraison offerte d&egrave;s 50 euros d'achat<\/p>",
+          "promo_text": "<p>livraison en France métropolitaine - frais de port offerts dès 59 euros d&#x27;achat<\/p>",
           "social_icons_header": false,
-          "phone_number": "Inscrivez-vous",
-          "top_bar_menu": "",
+          "phone_number": "",
+          "top_bar_menu": "inscrivez-vous-a-notre-newsletter",
           "show_cart": true,
           "cart_icon": "bag",
           "logo_display_width": 205,
-          "logo": "shopify:\/\/shop_images\/image_2_3.png",
-          "logo_home": "",
-          "logo_mobile": "",
+          "logo": "shopify:\/\/shop_images\/lepicurien-logo-noir-etroit.jpg",
           "main_linklist": "main-menu",
           "main_linklist2": "",
           "vertical_menu": false,
@@ -4378,8 +4376,8 @@
             "type": "text",
             "settings": {
               "title": "",
-              "content": "<p><span style=\"text-decoration: none;\">La maison familiale L&rsquo;&Eacute;picurien concocte pr&egrave;s de 300 r&eacute;f&eacute;rences sucr&eacute;es, sal&eacute;es et fromag&egrave;res, pour &eacute;veiller l'&Eacute;picurien qui est en chacun de nous. Un savoir-faire de 35 ans, une m&eacute;thode artisanale, des ingr&eacute;dients soigneusement s&eacute;lectionn&eacute;s. &Agrave; savourer et partager.<\/span>&nbsp;<\/p>",
-              "social_icons_footer": true
+              "content": "<p>La maison familiale L’Épicurien concocte près de 300 références sucrées, salées et fromagères,   pour éveiller l&#x27;épicurien qui est en chacun de nous. Un savoir-faire de plus de 35 ans, une méthode artisanale, des ingrédients soigneusement sélectionnés. À savourer et partager. <\/p><p><\/p><p>Crédits photo : Anne-Claire Héraud<\/p>",
+              "social_icons_footer": false
             }
           },
           "footer-2": {
@@ -4399,8 +4397,16 @@
           "1587032264948": {
             "type": "text",
             "settings": {
-              "title": "Vous êtes professionnel ?",
-              "content": "<p><span style=\"text-decoration: none;\">Contactez-nous : <\/span><span style=\"text-decoration: none;\">+33 (0)4 67 88 90 00 <br>La M&eacute;ridienne 34700 <br>LE BOSC FRANCE<\/span><\/p>",
+              "title": "Vous êtes professionnel?",
+              "content": "<p>Contactez-nous : <\/p><p>+33 (0)4 67 88 90 00<br\/>contact@epicurien.com<\/p><p>La Méridienne<br\/>34700 LE BOSC <br\/>FRANCE<br\/><br\/><\/p>",
+              "social_icons_footer": false
+            }
+          },
+          "1600954418496": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/EPV_signature-rouge-150x150-signature-mail.png",
+              "text_align": "center",
               "social_icons_footer": false
             }
           }
@@ -4409,10 +4415,11 @@
           "footer-3",
           "footer-2",
           "footer-1",
-          "1587032264948"
+          "1587032264948",
+          "1600954418496"
         ],
         "settings": {
-          "copyright_text": "website by LobsTTer \/",
+          "copyright_text": "",
           "display_designed_by": false,
           "display_payment_methods": true
         }
@@ -4421,22 +4428,21 @@
         "type": "image-with-text-overlay",
         "settings": {
           "wide_display": true,
-          "image": "shopify:\/\/shop_images\/homepage1.jpg",
-          "pretext": "<p>JANVIER \/ RODEZ<br>21h12<\/p>",
-          "title": "le doigt dans le pot",
+          "image": "shopify:\/\/shop_images\/20-12_Image-Accueil.jpg",
+          "pretext": "<p>DECEMBRE 24 \/ AVIGNON<br\/>20h30<\/p>",
+          "title": "",
           "subtitle": "",
           "caption_background": false,
           "caption_background_transparency": false,
-          "button1": "découvrir",
-          "button1_link": "",
+          "button1": "Célébrons Noël",
+          "button1_link": "https:\/\/epicurien.com\/collections\/tartinables-festifs",
           "button1_highlight": false,
           "button2": "",
-          "button2_link": "",
           "button2_highlight": false,
           "text_position": "center",
           "text_align": "center",
           "mobile_image_crop": "none",
-          "mobile_text_below_image": true,
+          "mobile_text_below_image": false,
           "mobile_text_color": ""
         }
       },
@@ -4457,9 +4463,9 @@
           "wide_display": true,
           "featured_collection_image": true,
           "image_darken": false,
-          "image": "",
+          "image": "shopify:\/\/shop_images\/Nos-recettes-Collection-LEpicurien.jpg",
           "display_collection_title": false,
-          "top_banner_height": 200,
+          "top_banner_height": 300,
           "collection_breadcrumb": true,
           "collection_tags": false,
           "collection_sort": false,
@@ -4476,167 +4482,49 @@
           "display_first_name": false,
           "display_last_name": false,
           "newsletter_title": "Entrez dans la communauté des épicuriens",
-          "newsletter_text": "<p><span style=\"text-decoration: none;\">Inscrivez-vous pour recevoir nos nouvelles &eacute;picuriennes, recettes, bons plans, et <strong>-10% sur votre premi&egrave;re commande<\/strong> (parce qu&rsquo;on sait ce que c&rsquo;est que d&rsquo;&ecirc;tre gourmand !)<\/span><\/p>",
-          "newsletter_section_text_align": "center",
-          "image": ""
+          "newsletter_text": "<p>Inscrivez-vous pour recevoir nos nouvelles épicuriennes, recettes, bons plans, et <strong>-10% sur votre première commande<\/strong> (parce qu’on sait ce que c’est que d’être gourmand !)<\/p>",
+          "newsletter_section_text_align": "center"
         }
       },
       "product-details-template": {
         "type": "product-details-template",
         "blocks": {
-          "product-details-template-0": {
-            "type": "rich_text_and_image",
-            "settings": {
-              "image": "",
-              "title": "This is an example headline",
-              "content": "<p>Vestibulum fringilla pede sit amet augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer tincidunt. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Suspendisse potenti.<\/p>",
-              "text_size": "featured_text",
-              "text_alignment": "center",
-              "button_label": "Button",
-              "button_link": ""
-            }
-          },
-          "product-details-template-1": {
-            "type": "divider",
-            "settings": {
-              "divider_spacing": 0,
-              "divider_border": false
-            }
-          },
-          "product-details-template-2": {
-            "type": "image_gallery",
-            "settings": {
-              "wide_display": true,
-              "detail_image_1": "",
-              "detail_image_2": "",
-              "detail_image_3": ""
-            }
-          },
-          "product-details-template-3": {
-            "type": "divider",
-            "settings": {
-              "divider_spacing": 20,
-              "divider_border": false
-            }
-          },
-          "product-details-template-4": {
-            "type": "image_with_text_overlay",
-            "settings": {
-              "wide_display": true,
-              "image": "",
-              "pretext": "<p>This is<\/p>",
-              "title": "Your Headline",
-              "subtitle": "<p>Customize this section<\/p>",
-              "caption_background": false,
-              "caption_background_transparency": false,
-              "text_position": "left",
-              "text_align": "left",
-              "button1": "Button",
-              "button1_link": "",
-              "button1_highlight": false,
-              "button2": "",
-              "button2_link": "",
-              "button2_highlight": false,
-              "mobile_image_crop": "none",
-              "mobile_text_below_image": true,
-              "mobile_text_color": ""
-            }
-          },
-          "product-details-template-5": {
-            "type": "image_with_text",
-            "settings": {
-              "layout": false,
-              "frontpage_text_align": "left",
-              "frontpage_image_position": "left",
-              "image": "",
-              "image_crop": "none",
-              "title": "Headline",
-              "text": "<p>Vestibulum fringilla pede sit amet augue. Pellentesque habitant morbi tristique senecrutrum eu, nisl.<\/p>",
-              "link": "",
-              "button_label": "Button"
-            }
-          },
-          "product-details-template-6": {
-            "type": "image_with_text",
-            "settings": {
-              "layout": false,
-              "frontpage_text_align": "left",
-              "frontpage_image_position": "left",
-              "image": "",
-              "image_crop": "none",
-              "title": "Headline",
-              "text": "<p>Vestibulum fringilla pede sit amet augue. Pellentesque habitant morbi tristique senecrutrum eu, nisl.<\/p>",
-              "link": "",
-              "button_label": "Button"
-            }
-          },
-          "product-details-template-7": {
-            "type": "image_with_text_overlay",
-            "settings": {
-              "wide_display": true,
-              "image": "",
-              "pretext": "<p>This is<\/p>",
-              "title": "Your Headline",
-              "subtitle": "<p>Customize this section<\/p>",
-              "caption_background": false,
-              "caption_background_transparency": false,
-              "text_position": "right",
-              "text_align": "left",
-              "button1": "Button",
-              "button1_link": "",
-              "button1_highlight": false,
-              "button2": "",
-              "button2_link": "",
-              "button2_highlight": false,
-              "mobile_image_crop": "none",
-              "mobile_text_below_image": true,
-              "mobile_text_color": ""
-            }
-          },
-          "product-details-template-8": {
-            "type": "contact_form",
-            "settings": {
-              "contact_heading": "Get in touch",
-              "contact_subheading": "Leave a message",
-              "contact_content": "<p>Phasellus viverra nulla ut metus varius laoreet. Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet eros. Etiam imperdiet imperdiet orci.<\/p>",
-              "contact_text_position": "left",
-              "contact_text_alignment": "left"
-            }
+          "1588603282418": {
+            "type": "recommended_products",
+            "settings": {}
           }
         },
         "block_order": [
-          "product-details-template-0",
-          "product-details-template-1",
-          "product-details-template-2",
-          "product-details-template-3",
-          "product-details-template-4",
-          "product-details-template-5",
-          "product-details-template-6",
-          "product-details-template-7",
-          "product-details-template-8"
+          "1588603282418"
         ],
         "settings": {
+          "wide_display": true,
+          "featured_collection_image": false,
+          "image_darken": false,
+          "image": "shopify:\/\/shop_images\/Nos-recettes-Collection-LEpicurien.jpg",
+          "display_collection_title": false,
+          "top_banner_height": 500,
           "product_thumbs": true,
           "gallery_arrows": false,
           "enable_product_lightbox": true,
-          "activate_zoom": false,
+          "activate_zoom": true,
           "slideshow_speed": 0,
           "slideshow_animation": "slide",
           "thumbnail_position": "bottom-slider",
           "enable_thumbnail_slider": true,
           "display_vendor": false,
-          "product_breadcrumb": false,
+          "product_breadcrumb": true,
           "display_sku": false,
           "display_collections": true,
           "display_type": false,
           "display_tags": false,
           "display_social_buttons": false,
-          "product_description_position": "top",
+          "product_description_position": "bottom",
           "display_savings": true,
           "show_payment_button": false,
           "product_images_position": "left",
           "set_product_height": false,
-          "product_height": 500,
+          "product_height": 300,
           "video_looping": false,
           "enable_shopify_product_badges": false,
           "enable_reviews_in_description": false
@@ -4656,39 +4544,27 @@
           "toggle": false
         }
       },
-      "1586955069408": {
-        "type": "featured-text",
-        "settings": {
-          "image": "",
-          "title": "",
-          "content": "<p>- Savourez chaque bouch&eacute;e -<\/p>",
-          "button_label": "",
-          "button_link": "",
-          "text_size": "featured_text",
-          "text_alignment": "center"
-        }
-      },
       "1586955554077": {
         "type": "featured-promotions",
         "blocks": {
           "1586955554077-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_4_1.png",
-              "link": "",
-              "title": "brunch",
+              "image": "shopify:\/\/shop_images\/20-12_Image1-HP.jpg",
+              "link": "https:\/\/epicurien.com\/collections\/cadeaux",
+              "title": "Toutes nos propositions cadeaux",
               "text": "",
-              "button_label": "voir la collection"
+              "button_label": "des cadeaux pour toutes les bourses"
             }
           },
           "1586955554077-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/image_4_2.png",
-              "link": "",
-              "title": "apéro",
+              "image": "shopify:\/\/shop_images\/20-12_Image2-HP.jpg",
+              "link": "https:\/\/epicurien.com\/blogs\/news\/tagliatelles-fraiches-tartinable-olives-noires",
+              "title": "une belle recette de tagliatelles olives & truffes",
               "text": "",
-              "button_label": "voir la collection"
+              "button_label": "c'est l'heure de se faire plaisir"
             }
           }
         },
@@ -4707,11 +4583,11 @@
       "1587027499326": {
         "type": "featured-text",
         "settings": {
-          "image": "",
           "title": "à table !",
+          "svg": "",
+          "subtitle": "",
           "content": "",
           "button_label": "",
-          "button_link": "",
           "text_size": "featured_text",
           "text_alignment": "center"
         }
@@ -4721,30 +4597,33 @@
         "settings": {
           "title": "",
           "collection_description": false,
-          "collection": "confitures",
+          "collection": "beaux-cadeaux",
           "collection_style": "slider",
           "products_per": 4,
-          "products_limit": 9
+          "products_limit": 9,
+          "blog_additional_posts": false,
+          "bottom_link": "Voir tous les produits",
+          "link": "shopify:\/\/collections\/tous-les-produits"
         }
       },
       "product-recommendations": {
         "type": "product-recommendations",
         "settings": {
           "show_product_recommendations": true,
-          "product_recommendations_style": "grid",
-          "product_recommendations_heading": "You may also like",
-          "products_per_row": 3,
-          "recommended_products_limit": 4
+          "product_recommendations_style": "slider",
+          "product_recommendations_heading": "Vous aimerez aussi",
+          "products_per_row": 2,
+          "recommended_products_limit": 10
         }
       },
       "1587029946227": {
         "type": "featured-text",
         "settings": {
-          "image": "",
-          "title": "les actus",
+          "title": "",
+          "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0300\/2030\/5034\/files\/20200512_pictosepicurien_toque.png?v=1593431004",
+          "subtitle": "LES ACTUS",
           "content": "",
           "button_label": "",
-          "button_link": "",
           "text_size": "featured_text",
           "text_alignment": "center"
         }
@@ -4756,13 +4635,13 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Rectangle_3.3.png",
-              "title": "ingrédient en direct du potager",
+              "image": "shopify:\/\/shop_images\/20-06_Producteur_dd2bb132-7859-42e7-9bc5-9b6ccc0ccf40.jpg",
+              "title": "en direct du producteur",
               "heading_size": "regular_text",
-              "text": "<p><span style=\"text-decoration: none;\">L&rsquo;oignon doux des C&eacute;vennes<\/span><\/p>",
-              "button_label": "lire l'article",
-              "button_link": "#",
-              "align_text": "left",
+              "text": "<p>Nos ingrédients<\/p><p><strong>La figue noire et blanche des Figuières<\/strong><\/p>",
+              "button_label": "",
+              "button_link": "https:\/\/epicurien.com\/blogs\/producteurs\/les-figues-de-provence",
+              "align_text": "center",
               "border_style": "none"
             }
           },
@@ -4770,13 +4649,12 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Rectangle_3.3_1.png",
-              "title": "recettes faites-le vous-même",
+              "image": "shopify:\/\/shop_images\/20-12_Recette.jpg",
+              "title": "faites-le vous-même",
               "heading_size": "regular_text",
-              "text": "<p><span style=\"text-decoration: none;\">Le Bundt Cake Choco Noisette<\/span><\/p>",
-              "button_label": "lire l'article",
-              "button_link": "#",
-              "align_text": "left",
+              "text": "<p>Nos recettes<\/p><p><strong>Les feuilletés sapins de fête<\/strong><\/p>",
+              "button_label": "",
+              "align_text": "center",
               "border_style": "none"
             }
           },
@@ -4784,13 +4662,13 @@
             "type": "text_block",
             "settings": {
               "enable_image": true,
-              "image": "shopify:\/\/shop_images\/Rectangle_3.3_2.png",
-              "title": "témoignage l’épicurien du moment",
+              "image": "shopify:\/\/shop_images\/20-12_Epicurien_1e3ffdf4-97cf-4361-a344-e7adc6f57bb1.jpg",
+              "title": "l’épicurien du moment",
               "heading_size": "regular_text",
-              "text": "<p><span style=\"text-decoration: none;\">David Lequennoy<\/span><\/p>",
-              "button_label": "lire l'article",
-              "button_link": "#",
-              "align_text": "left",
+              "text": "<p>Nos témoignages<\/p><p><strong>Pause Moderne, des boxes DIY<\/strong><\/p>",
+              "button_label": "",
+              "button_link": "https:\/\/epicurien.com\/blogs\/les-epicuriens\/pause-moderne-box-creative",
+              "align_text": "center",
               "border_style": "none"
             }
           }
@@ -4806,6 +4684,7 @@
       },
       "1587030503439": {
         "type": "video",
+        "disabled": true,
         "settings": {
           "wide_display": false,
           "aspect_ratio": "16:9",
@@ -4819,68 +4698,23 @@
           "image": "shopify:\/\/shop_images\/Rectangle_81.png",
           "display_text_over_video": false,
           "pretext": "",
-          "title": "",
-          "subtitle": "",
+          "title": "LE CITRON DE MENTON",
+          "subtitle": "<p>Rencontre en vidéo avec notre producteur<\/p>",
           "caption_background": false,
           "caption_background_transparency": false,
           "button1_label": "lire la vidéo",
-          "button1_link": "",
           "button1_highlight": false,
           "button2_label": "",
-          "button2_link": "",
           "button2_highlight": false,
           "text_position": "center",
           "text_align": "center",
-          "mobile_text_below_image": true,
+          "mobile_text_below_image": false,
           "mobile_text_color": ""
-        }
-      },
-      "1587030898399": {
-        "type": "featured-text",
-        "settings": {
-          "image": "",
-          "title": "le citron de menton",
-          "content": "<p>Rencontre en vid&eacute;o avec notre producteur<\/p>",
-          "button_label": "",
-          "button_link": "",
-          "text_size": "regular_text",
-          "text_alignment": "align_left"
-        }
-      },
-      "1587030974627": {
-        "type": "custom-html",
-        "settings": {
-          "custom_html": "<center>bandeau + icône avion papier<\/center>"
         }
       },
       "1587031012600": {
         "type": "contact-form",
         "blocks": {
-          "1587031012600-1": {
-            "type": "email",
-            "settings": {
-              "label": "Email",
-              "placeholder": "Email"
-            }
-          },
-          "1587031734612": {
-            "type": "dropdown",
-            "settings": {
-              "label": "Comment avez-vous entendu parlé de nous ?",
-              "placeholder": "Choisissez...",
-              "required": false,
-              "options_1": "Option 1",
-              "options_2": "Option 2",
-              "options_3": "Option 3",
-              "options_4": "",
-              "options_5": "",
-              "options_6": "",
-              "options_7": "",
-              "options_8": "",
-              "options_9": "",
-              "options_10": ""
-            }
-          },
           "1587031012600-2": {
             "type": "textarea",
             "settings": {
@@ -4889,13 +4723,20 @@
               "required": true
             }
           },
-          "1587031682316": {
-            "type": "radio",
+          "1587031012600-1": {
+            "type": "email",
             "settings": {
-              "label": "Vous êtes un professionnel ?",
+              "label": "Email",
+              "placeholder": "Email"
+            }
+          },
+          "1588020190324": {
+            "type": "checkbox",
+            "settings": {
+              "label": "_",
               "required": false,
-              "options_1": "Oui",
-              "options_2": "Non",
+              "options_1": "Vous êtes professionnel (merci de remplir les champs ci-dessous)",
+              "options_2": "",
               "options_3": "",
               "options_4": "",
               "options_5": "",
@@ -4905,23 +4746,39 @@
               "options_9": "",
               "options_10": ""
             }
+          },
+          "1589829770057": {
+            "type": "textfield",
+            "settings": {
+              "label": "Téléphone",
+              "placeholder": "Téléphone",
+              "required": false
+            }
+          },
+          "1589829778287": {
+            "type": "textfield",
+            "settings": {
+              "label": "Code postal",
+              "placeholder": "Code postal",
+              "required": false
+            }
           }
         },
         "block_order": [
-          "1587031012600-1",
-          "1587031734612",
           "1587031012600-2",
-          "1587031682316"
+          "1587031012600-1",
+          "1588020190324",
+          "1589829770057",
+          "1589829778287"
         ],
         "settings": {
-          "contact_image": "shopify:\/\/shop_images\/visuel-contact.png",
+          "contact_image": "shopify:\/\/shop_images\/echangeons.jpg",
           "contact_heading": "",
           "contact_subheading": "échangeons !",
-          "contact_content": "<p><span style=\"text-decoration: none;\">Ami &eacute;picurien, amie &eacute;picurienne, particuliers ou professionnels, nous sommes &agrave; l&rsquo;&eacute;coute de vos demandes et remarques. Envoyez-nous un email via ce formulaire de contact ou appelez-nous au 04.67.88.90.00 A bient&ocirc;t !<\/span><\/p>",
+          "contact_content": "<p>Ami épicurien, amie épicurienne, particuliers ou professionnels, nous sommes à l’écoute de vos demandes et remarques. Envoyez-nous un email via ce formulaire de contact ou appelez-nous au 04.67.88.90.00.  À bientôt !<\/p>",
           "contact_text_position": "left",
           "contact_text_alignment": "left",
-          "contact_social_buttons": false,
-          "contact_logo": ""
+          "contact_social_buttons": false
         }
       },
       "1587031851812": {
@@ -4930,10 +4787,9 @@
           "wide_display": true,
           "display_first_name": false,
           "display_last_name": false,
-          "newsletter_title": "ENTREZ DANS LA COMMUNAUTé DES éPICURIENS",
-          "newsletter_text": "<p><span style=\"text-decoration: none;\">Inscrivez-vous pour recevoir nos nouvelles &eacute;picuriennes, recettes, bons plans, et <strong>-10% sur votre premi&egrave;re commande<\/strong> (parce qu&rsquo;on sait ce que c&rsquo;est que d&rsquo;&ecirc;tre gourmand !)<\/span><\/p>",
-          "newsletter_section_text_align": "center",
-          "image": ""
+          "newsletter_title": "Entrez dans la communauté des épicuriens",
+          "newsletter_text": "<p>Inscrivez-vous pour recevoir nos nouvelles épicuriennes, recettes, bons plans, et <strong>-10% sur votre première commande<\/strong> (parce qu’on sait ce que c’est que d’être gourmand !).<\/p>",
+          "newsletter_section_text_align": "center"
         }
       },
       "1587031962358": {
@@ -4943,23 +4799,39 @@
             "type": "logo_image",
             "settings": {
               "image": "shopify:\/\/shop_images\/Vector_3.png",
-              "link": ""
+              "link": "https:\/\/www.facebook.com\/lepicurien34\/"
             }
           },
           "1587031962358-1": {
             "type": "logo_image",
             "settings": {
               "image": "shopify:\/\/shop_images\/Vector_4.png",
-              "link": ""
+              "link": "https:\/\/www.instagram.com\/lepicurien.officiel\/"
+            }
+          },
+          "1591186943934": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pinterest-30x30.jpg",
+              "link": "https:\/\/www.pinterest.fr\/lepicurien0035\/"
+            }
+          },
+          "1591187517208": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/youtube-30x30.png",
+              "link": "https:\/\/www.youtube.com\/channel\/UCQPqkQpw8dF52-X6ueWt2Nw"
             }
           }
         },
         "block_order": [
           "1587031962358-0",
-          "1587031962358-1"
+          "1587031962358-1",
+          "1591186943934",
+          "1591187517208"
         ],
         "settings": {
-          "title": "#savouronsensemble"
+          "title": "#savourerensemble"
         }
       },
       "page-sidebar-template": {
@@ -4993,6 +4865,7 @@
           "1587042822436"
         ],
         "settings": {
+          "title": "les recettes des épicuriens",
           "wide_display": true,
           "featured_collection_image": true,
           "image_darken": false,
@@ -5068,20 +4941,12 @@
             "type": "column",
             "settings": {
               "richtext_top": "",
-              "image_top": "shopify:\/\/shop_images\/visuel-contact.png",
               "image_caption_top": "",
-              "image_link_top": "",
               "menu_1": "",
-              "menu_1_link": "",
               "menu_2": "",
-              "menu_2_link": "",
               "menu_3": "",
-              "menu_3_link": "",
               "menu_4": "",
-              "menu_4_link": "",
-              "image_bottom": "",
               "image_caption_bottom": "",
-              "image_link_bottom": "",
               "richtext_bottom": ""
             }
           },
@@ -5089,20 +4954,13 @@
             "type": "column",
             "settings": {
               "richtext_top": "",
-              "image_top": "",
               "image_caption_top": "",
-              "image_link_top": "",
-              "menu_1": "confitures-cie",
-              "menu_1_link": "",
+              "menu_1": "",
               "menu_2": "",
-              "menu_2_link": "",
               "menu_3": "",
-              "menu_3_link": "",
               "menu_4": "",
-              "menu_4_link": "",
-              "image_bottom": "",
-              "image_caption_bottom": "",
-              "image_link_bottom": "",
+              "image_bottom": "shopify:\/\/shop_images\/Mega-menu-confitures.jpg",
+              "image_caption_bottom": "Découvrez nos confitures et gourmandises",
               "richtext_bottom": ""
             }
           },
@@ -5110,20 +4968,12 @@
             "type": "column",
             "settings": {
               "richtext_top": "",
-              "image_top": "",
               "image_caption_top": "",
-              "image_link_top": "",
-              "menu_1": "moments-sucres",
-              "menu_1_link": "",
+              "menu_1": "confitures-cie",
               "menu_2": "",
-              "menu_2_link": "",
               "menu_3": "",
-              "menu_3_link": "",
               "menu_4": "",
-              "menu_4_link": "",
-              "image_bottom": "",
               "image_caption_bottom": "",
-              "image_link_bottom": "",
               "richtext_bottom": ""
             }
           },
@@ -5131,20 +4981,12 @@
             "type": "column",
             "settings": {
               "richtext_top": "",
-              "image_top": "",
               "image_caption_top": "",
-              "image_link_top": "",
-              "menu_1": "",
-              "menu_1_link": "",
+              "menu_1": "moments-sucres",
               "menu_2": "",
-              "menu_2_link": "",
               "menu_3": "",
-              "menu_3_link": "",
               "menu_4": "",
-              "menu_4_link": "",
-              "image_bottom": "",
               "image_caption_bottom": "",
-              "image_link_bottom": "",
               "richtext_bottom": ""
             }
           },
@@ -5152,20 +4994,12 @@
             "type": "column",
             "settings": {
               "richtext_top": "",
-              "image_top": "",
               "image_caption_top": "",
-              "image_link_top": "",
               "menu_1": "",
-              "menu_1_link": "",
               "menu_2": "",
-              "menu_2_link": "",
               "menu_3": "",
-              "menu_3_link": "",
               "menu_4": "",
-              "menu_4_link": "",
-              "image_bottom": "",
               "image_caption_bottom": "",
-              "image_link_bottom": "",
               "richtext_bottom": ""
             }
           }
@@ -5184,45 +5018,29 @@
       "mega-menu-4": {
         "type": "mega-menu-4",
         "blocks": {
-          "mega-menu-4-4": {
-            "type": "column",
-            "settings": {
-              "richtext_top": "",
-              "image_top": "",
-              "image_caption_top": "",
-              "image_link_top": "",
-              "menu_1": "",
-              "menu_1_link": "",
-              "menu_2": "",
-              "menu_2_link": "",
-              "menu_3": "",
-              "menu_3_link": "",
-              "menu_4": "",
-              "menu_4_link": "",
-              "image_bottom": "",
-              "image_caption_bottom": "",
-              "image_link_bottom": "",
-              "richtext_bottom": ""
-            }
-          },
           "mega-menu-4-2": {
             "type": "column",
             "settings": {
               "richtext_top": "",
-              "image_top": "",
               "image_caption_top": "",
-              "image_link_top": "",
               "menu_1": "",
-              "menu_1_link": "",
               "menu_2": "",
-              "menu_2_link": "",
               "menu_3": "",
-              "menu_3_link": "",
               "menu_4": "",
-              "menu_4_link": "",
-              "image_bottom": "",
               "image_caption_bottom": "",
-              "image_link_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-4-1": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "<p><a href=\"\/pages\/nous\" title=\"Nous\">Nous<\/a><br\/><a href=\"\/blogs\/news\" title=\"Recettes\">Nos recettes<\/a><br\/><a href=\"\/blogs\/producteurs\" title=\"Producteurs\">Nos producteurs<\/a><br\/><a href=\"\/blogs\/les-epicuriens\" title=\"Les épicuriens\">Les épicuriens<\/a><br\/><a href=\"http:\/\/lepicurien2.myshopify.com\/pages\/store-locator\" title=\"http:\/\/lepicurien2.myshopify.com\/pages\/store-locator\">Où nous trouver<\/a><\/p>",
+              "image_caption_top": "",
+              "menu_1": "",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
               "richtext_bottom": ""
             }
           },
@@ -5230,72 +5048,35 @@
             "type": "column",
             "settings": {
               "richtext_top": "",
-              "image_top": "shopify:\/\/shop_images\/Capture_d_ecran_2020-04-15_a_18.33_1.png",
+              "image_top": "shopify:\/\/shop_images\/Mega-menu-decouvrez-nous.jpg",
               "image_caption_top": "",
-              "image_link_top": "",
               "menu_1": "",
-              "menu_1_link": "",
               "menu_2": "",
-              "menu_2_link": "",
               "menu_3": "",
-              "menu_3_link": "",
               "menu_4": "",
-              "menu_4_link": "",
-              "image_bottom": "",
               "image_caption_bottom": "",
-              "image_link_bottom": "",
               "richtext_bottom": ""
             }
           },
-          "mega-menu-4-1": {
-            "type": "column",
-            "settings": {
-              "richtext_top": "<p><a href=\"\/pages\/nous\" title=\"Nous\">Nous<\/a><br><a href=\"\/collections\/recettes\" title=\"Recettes\">Nos recettes<\/a><br><a href=\"#\" title=\"#\">Les &eacute;picuriens<\/a><br><a href=\"#\" title=\"#\">On parle de nous<\/a><\/p>",
-              "image_top": "",
-              "image_caption_top": "",
-              "image_link_top": "",
-              "menu_1": "",
-              "menu_1_link": "",
-              "menu_2": "",
-              "menu_2_link": "",
-              "menu_3": "",
-              "menu_3_link": "",
-              "menu_4": "",
-              "menu_4_link": "",
-              "image_bottom": "",
-              "image_caption_bottom": "",
-              "image_link_bottom": "",
-              "richtext_bottom": ""
-            }
-          },
-          "mega-menu-4-3": {
+          "1591100413361": {
             "type": "column",
             "settings": {
               "richtext_top": "",
-              "image_top": "",
               "image_caption_top": "",
-              "image_link_top": "",
               "menu_1": "",
-              "menu_1_link": "",
               "menu_2": "",
-              "menu_2_link": "",
               "menu_3": "",
-              "menu_3_link": "",
               "menu_4": "",
-              "menu_4_link": "",
-              "image_bottom": "",
               "image_caption_bottom": "",
-              "image_link_bottom": "",
               "richtext_bottom": ""
             }
           }
         },
         "block_order": [
-          "mega-menu-4-4",
           "mega-menu-4-2",
-          "mega-menu-4-0",
           "mega-menu-4-1",
-          "mega-menu-4-3"
+          "mega-menu-4-0",
+          "1591100413361"
         ],
         "settings": {
           "parent": "Découvrez-nous"
@@ -5307,7 +5088,7 @@
           "wide_display": true,
           "featured_image": "banner",
           "image_darken": false,
-          "blog_breadcrumb": false,
+          "blog_breadcrumb": true,
           "blog_pagination": true,
           "blog_tags": false,
           "blog_byline": false,
@@ -5324,10 +5105,6 @@
       "blog-template": {
         "type": "blog-template",
         "blocks": {
-          "1587050821476": {
-            "type": "post_tags",
-            "settings": {}
-          },
           "1587051127766": {
             "type": "menu",
             "settings": {
@@ -5342,34 +5119,1237 @@
           }
         },
         "block_order": [
-          "1587050821476",
           "1587051127766",
           "1587051136706"
         ],
         "settings": {
+          "show_featured_blog": false,
+          "blogtitle": "Recettes du moment",
+          "blog_widget_select": "articles-a-mettre-en-avant",
+          "home_page_articles": 4,
           "wide_display": true,
-          "image": "shopify:\/\/shop_images\/Rectangle_72_2.png",
+          "blog_main_title": "Les recettes de L'Épicurien",
+          "image": "shopify:\/\/shop_images\/Nos-recettes-Collection-LEpicurien.jpg",
           "image_darken": false,
           "subtitle": "",
-          "blog_posts_per_row": 3,
-          "blog_posts_per_page": 12,
+          "blog_posts_per_row": 4,
+          "blog_posts_per_page": 50,
           "blog_tags": false,
           "blog_author": false,
           "read_time": false,
           "blog_date": false,
           "blog_comment_count": false,
           "read_more_link": false,
-          "toggle": true
+          "toggle": true,
+          "text_link1": "Voir toutes les recettes sucrées",
+          "text_link2": "Voir toutes les recettes salées",
+          "link1": "https:\/\/lepicurien2.myshopify.com\/blogs\/news\/tagged\/recettes-sucrees",
+          "link2": "https:\/\/lepicurien2.myshopify.com\/blogs\/news\/tagged\/recettes-salees"
         }
       },
       "page-details-template": {
         "type": "page-details-template",
         "blocks": {
-          "page-details-template-0": {
+          "1591953749527": {
             "type": "image_with_text_overlay",
             "settings": {
               "wide_display": true,
+              "image": "shopify:\/\/shop_images\/Nous-Collection-LEpicurien.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "caption_background": false,
+              "caption_background_transparency": false,
+              "text_position": "left",
+              "text_align": "left",
+              "button1": "",
+              "button1_link": "",
+              "button1_highlight": false,
+              "button2": "",
+              "button2_link": "",
+              "button2_highlight": false,
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "mobile_text_color": ""
+            }
+          },
+          "1592296908322": {
+            "type": "divider",
+            "settings": {
+              "divider_spacing": 20,
+              "divider_border": false
+            }
+          },
+          "1592296927738": {
+            "type": "image_with_text",
+            "settings": {
+              "layout": false,
+              "frontpage_text_align": "left",
+              "frontpage_image_position": "left",
+              "image": "shopify:\/\/shop_images\/Nous.jpg",
+              "image_crop": "none",
+              "title": "Qui sommes-nous ?",
+              "text": "<p>Tout a commenc&eacute; il y a pr&egrave;s de 40 ans dans l'arri&egrave;re-boutique d'une &eacute;picerie fine parisienne. Aujourd'hui, son esprit perdure... au c&oelig;ur du Languedoc-Roussillon. H&eacute;ritage d'un oncle ma&icirc;tre artisan confiturier, on&nbsp;a gard&eacute; cette cuisson artisanale au chaudron, la cr&eacute;ation insatiable des associations de go&ucirc;ts, la pr&eacute;servation des textures, les saveurs d'ingr&eacute;dients tri&eacute;s sur le volet. Ce savoir-faire, Xavier l'a sublim&eacute;, Benoit l'a r&eacute;v&eacute;l&eacute;. Deux fr&egrave;res et un int&eacute;r&ecirc;t en commun : celui de r&eacute;veiller l'&eacute;picurien qui est en chacun de nous. Ce n'est que le d&eacute;but d'une aventure gourmande qui n'a de sens que dans le partage. Notre leitmotiv : la qualit&eacute; ! Nous sour&ccedil;ons les meilleurs fruits et l&eacute;gumes. Nous privil&eacute;gions les producteurs fran&ccedil;ais&nbsp;ainsi que ceux qui produisent le meilleur ingr&eacute;dient sur leur territoire. Simplicit&eacute;, authenticit&eacute;, cr&eacute;ativit&eacute; sont nos seuls secrets de fabrication.<\/p>",
+              "link": "",
+              "button_label": ""
+            }
+          },
+          "1592297006836": {
+            "type": "image_gallery",
+            "settings": {
+              "enable_lightbox": false,
+              "title": "La fine équipe",
+              "wide_display": true,
+              "detail_image_1": "shopify:\/\/shop_images\/Xavier.jpg",
+              "link1": "",
+              "detail_image_2": "shopify:\/\/shop_images\/Benoit-2.jpg",
+              "link2": "",
+              "detail_image_3": "shopify:\/\/shop_images\/Sandrine-3.jpg",
+              "link3": "",
+              "detail_image_4": "shopify:\/\/shop_images\/Valerie.jpg",
+              "link4": "",
+              "detail_image_5": "shopify:\/\/shop_images\/Eric-Evan.jpg",
+              "link5": "",
+              "detail_image_6": "shopify:\/\/shop_images\/Cathia_32e27dfb-a738-42f1-82be-7ac70e3a17cf.jpg",
+              "link6": "",
+              "detail_image_7": "shopify:\/\/shop_images\/Mathilde.jpg",
+              "link7": "",
+              "detail_image_8": "shopify:\/\/shop_images\/Fatma-2.jpg",
+              "link8": "",
+              "detail_image_9": "shopify:\/\/shop_images\/Noemie-3.jpg",
+              "link9": "",
+              "detail_image_10": "shopify:\/\/shop_images\/Christelle-2.jpg",
+              "link10": "",
+              "detail_image_11": "shopify:\/\/shop_images\/Patrice.jpg",
+              "link11": "",
+              "detail_image_12": "shopify:\/\/shop_images\/Daniel.jpg",
+              "link12": "",
+              "detail_image_13": "shopify:\/\/shop_images\/Laure.jpg",
+              "link13": "",
+              "detail_image_14": "shopify:\/\/shop_images\/Sebastien.jpg",
+              "link14": "",
+              "detail_image_15": "shopify:\/\/shop_images\/Fanny.jpg",
+              "link15": "",
+              "detail_image_16": "",
+              "link16": "",
+              "detail_image_17": "",
+              "link17": "",
+              "detail_image_18": "",
+              "link18": "",
+              "detail_image_19": "",
+              "link19": "",
+              "detail_image_20": "",
+              "link20": "",
+              "detail_image_21": "",
+              "link21": "",
+              "detail_image_22": "",
+              "link22": "",
+              "detail_image_23": "",
+              "link23": "",
+              "detail_image_24": "",
+              "link24": "",
+              "detail_image_25": "",
+              "link25": "",
+              "detail_image_26": "",
+              "link26": "",
+              "detail_image_27": "",
+              "link27": "",
+              "detail_image_28": "",
+              "link28": "",
+              "detail_image_29": "",
+              "link29": "",
+              "detail_image_30": "",
+              "link30": ""
+            }
+          },
+          "1592297170651": {
+            "type": "rich_text_and_image",
+            "settings": {
+              "image": "",
+              "title": "",
+              "content": "<p>Nous, c'est aussi une &eacute;quipe d'&eacute;picurieux passionn&eacute;s.<br>Hyper actifs des sens, nous sommes en qu&ecirc;te constante du Go&ucirc;t.<br>En cuisine, exigence et rigueur sont nos ma&icirc;tre mots. A table, place au partage et &agrave; la convivialit&eacute; !<\/p>",
+              "text_size": "featured_text",
+              "text_alignment": "center",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1593707902189": {
+            "type": "rich_text_and_image",
+            "settings": {
+              "image": "",
+              "title": "Partagez la joie de bien manger !",
+              "content": "",
+              "text_size": "featured_text",
+              "text_alignment": "center",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1594044928133": {
+            "type": "image_with_text",
+            "settings": {
+              "layout": false,
+              "frontpage_text_align": "left",
+              "frontpage_image_position": "left",
+              "image": "shopify:\/\/shop_images\/Nous-joie-2.jpg",
+              "image_crop": "center",
+              "title": "",
+              "text": "<p>Ce n'est pas parce que manger est un acte quotidien qu'il doit &ecirc;tre ordinaire...<\/p>\n<p>R&eacute;veillez vos plats les plus simples avec nos produits d'&eacute;picerie fine :<\/p>\n<p>- des pestos et sauces pour vos plats de p&acirc;tes et risottos,<\/p>\n<p>- des chutneys, confits et condiments pour vos viandes, charcuteries et gratins de pommes de terre,<\/p>\n<p>- des huiles, vinaigres et houmous pour vos salades,<\/p>\n<p>- des tartinades pour vos ap&eacute;ritifs,<\/p>\n<p>- des pop fruits pour vos cocktails et boissons rafra&icirc;chissantes,<\/p>\n<p>- des confits de fruits, d'herbes et de vin pour vos plateaux de fromages,<\/p>\n<p>- des confitures et p&acirc;tes &agrave; tartiner pour vos petit-d&eacute;jeuner, go&ucirc;ters et desserts.<\/p>\n<p>Commandez-les en ligne et r&eacute;alisez facilement vos repas quotidiens ou festifs avec des produits de qualit&eacute;.<\/p>\n<p>Nos pr&eacute;parations sont majoritairement v&eacute;g&eacute;tariennes et sans allerg&egrave;nes.<\/p>\n<p>Elles sont r&eacute;alis&eacute;es &agrave; partir de fruits et de l&eacute;gumes cuits dans des chaudrons ouverts, dans le plus grand respect de l'ingr&eacute;dient.<\/p>\n<p>Nos recettes contiennent une liste d'ingr&eacute;dients courte pour des produits authentiques, sains et naturels.<\/p>\n<p>Nous fondons notre savoir-faire artisanal sur la pr&eacute;servation des go&ucirc;ts, textures et couleurs des ingr&eacute;dients.<\/p>\n<p>C'est comme si vous veniez de cuisiner vos fruits et l&eacute;gumes de retour de march&eacute;, les efforts en moins.<\/p>\n<p>R&eacute;veillez l'&eacute;picurien qui est en vous !<\/p>",
+              "link": "",
+              "button_label": ""
+            }
+          },
+          "1594045376214": {
+            "type": "rich_text_and_image",
+            "settings": {
+              "image": "",
+              "title": "Notre approche du métier",
+              "content": "<p><strong>Un savoir-faire artisanal<\/strong><\/p>\n<p>Notre processus de production est encore (et restera) <strong>enti&egrave;rement humanis&eacute;<\/strong>. Cela nous permet d'ajuster chaque recette en fonction de l'ingr&eacute;dient lors de la fabrication. En effet, le fruit ou le l&eacute;gume peut &ecirc;tre plus ou moins sucr&eacute;, plus ou moins gorg&eacute; d'eau... en fonction de la m&eacute;t&eacute;o. C'est tout un <strong>savoir-faire garanti par nos 2 ma&icirc;tres-confituriers<\/strong> qui supervisent les cuissons ! L&rsquo;&Eacute;picurien utilise des <strong>chaudrons ouverts avec une circulation naturelle de la vapeur d'eau<\/strong>. Cette technique garantit le respect des ingr&eacute;dients : leurs saveurs, leurs textures, leur &eacute;clat.<\/p>\n<p>Nos <strong>confitures<\/strong> sont <strong>extra<\/strong> (c'est-&agrave;-dire avec un pourcentage &eacute;lev&eacute; de fruits compris entre 55 et 75%) et nos produits comportent une <strong>liste courte d'ingr&eacute;dients naturels<\/strong>, compr&eacute;hensible de tous. Ils sont <strong>sans conservateurs, sans ar&ocirc;me et sans colorant<\/strong> (seules quelques exceptions sont faites dans la famille des moutardes, produits &agrave; base de truffe, fleurs ou de noix de coco).<\/p>\n<p><\/p>\n<p><strong>Un process qualit&eacute; pointu<\/strong><\/p>\n<p>Dans une <strong>d&eacute;marche d&rsquo;am&eacute;lioration continue et d&rsquo;implication des &eacute;quipes<\/strong>, L&rsquo;&Eacute;picurien est certifi&eacute; <strong>FSSC22000<\/strong>, &laquo;&nbsp;<strong>food safety system certification<\/strong>&nbsp;&raquo;, depuis l&rsquo;automne 2018. C&rsquo;est une norme de s&eacute;curit&eacute; sanitaire qui <strong>garantit la s&eacute;curit&eacute; alimentaire et la qualit&eacute; de notre processus de fabrication<\/strong>. Propret&eacute; irr&eacute;prochable &eacute;videmment, tra&ccedil;abilit&eacute;, suivi des process, logistique et SAV impeccables&hellip; C&rsquo;est l&rsquo;assurance non seulement d&rsquo;un bon produit, mais aussi d&rsquo;une r&eacute;alisation selon les exigences les plus strictes. Nous sommes tr&egrave;s peu nombreux sur le march&eacute;&nbsp;&agrave; pouvoir vous garantir cela !<\/p>\n<p><\/p>\n<p><strong>Une conscience environnementale<\/strong><\/p>\n<p>Chez <strong>L&rsquo;&Eacute;picurien<\/strong>, comme notre nom l&rsquo;indique, nous ne nous se satisfaisons pas de la tomate cultiv&eacute;e sans terre ou de la fraise priv&eacute;e de soleil. Tout cela se ressent au go&ucirc;t. Alors, nous choisissons le top de la figue m&ucirc;rie &agrave; point, de la mangue juteuse ou de l&rsquo;olive charnue. Tout cela <strong>le plus proche de chez nous<\/strong> d&egrave;s que c&rsquo;est possible.<\/p>\n<p><em>Vous voulez en savoir plus sur nos mati&egrave;res premi&egrave;res ? Rendez-vous dans notre rubrique \"Questions fr&eacute;quentes\".<\/em><\/p>\n<p>Chez nous, nous r&eacute;alisons le <strong>tri des d&eacute;chets<\/strong> et utilisons des <strong>emballages recycl&eacute;s<\/strong> pour nos exp&eacute;ditions aux particuliers.<\/p>\n<p>Nous &eacute;tudions chaque ann&eacute;e les derni&egrave;res technologies d'&eacute;tiquettes et d'emballages pour pouvoir utiliser des mati&egrave;res recycl&eacute;es d&egrave;s qu'elles correspondent &agrave; nos contraintes techniques (r&eacute;sistance aux temp&eacute;ratures, transport...). Nous choisissons des fournisseurs locaux qui n'externalisent pas la fabrication de nos &eacute;tiquettes (moins de 50km de chez nous) et d'&eacute;tuis (moins de 300km).<\/p>\n<p>Nous ne supportons pas le g&acirc;chis alimentaire. Nos process sont r&eacute;alis&eacute;s de telle fa&ccedil;on qu'il y ait le <strong>moins de perte possible<\/strong>, et nous offrons nos invendus aux Restos du C&oelig;ur.<\/p>\n<p><strong>Le respect de l'humain<\/strong><\/p>\n<p>Nous sommes install&eacute;s &agrave; une cinquantaine de kilom&egrave;tres &agrave; l&rsquo;ouest de Montpellier depuis plus de vingt ans. Nos &eacute;quipes sont l&agrave; pratiquement depuis l&rsquo;origine. Les seuls d&eacute;parts sont les retraites. Nos &eacute;quipes viennent des villages et des villes alentour.<\/p>\n<p>Nous essayons d&rsquo;impliquer l&rsquo;ensemble du personnel dans la conduite de l&rsquo;entreprise, dans le choix des nouveaut&eacute;s,&hellip; Nous sommes tous des Epicuriens au palais exigeant et chacun go&ucirc;te et donne son avis. Chacun peut donner des id&eacute;es de nouvelles recettes &eacute;galement. Si celles-ci plaisent au plus grand nombre et que l&rsquo;&eacute;quipe de R&amp;D est en mesure de les mettre en &oelig;uvre, nous les testons, les approuvons et les mettons sur le march&eacute;. Nous sommes <strong>&agrave; l'&eacute;coute<\/strong> de toutes les remarques constructives. Nous formons une <strong>&eacute;quipe soud&eacute;e, p&eacute;renne et diversifi&eacute;e<\/strong>. C&rsquo;est notre plus grande force.<\/p>",
+              "text_size": "featured_text",
+              "text_alignment": "align_left",
+              "button_label": "",
+              "button_link": "shopify:\/\/pages\/questions-frequentes"
+            }
+          },
+          "1592297233878": {
+            "type": "rich_text_and_image",
+            "settings": {
+              "image": "",
+              "title": "C'est quoi être épicurien ?",
+              "content": "",
+              "text_size": "featured_text",
+              "text_alignment": "center",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1592297292952": {
+            "type": "image_with_text",
+            "settings": {
+              "layout": false,
+              "frontpage_text_align": "left",
+              "frontpage_image_position": "right",
+              "image": "shopify:\/\/shop_images\/image-manifeste.jpg",
+              "image_crop": "none",
+              "title": "Être épicurien",
+              "text": "<p>Avoir envie.<br>Aimer manger.<br>Etre curieux de choses nouvelles.<br>Savourer chaque bouch&eacute;e.<br>Appr&eacute;cier avec le c&oelig;ur.<br>Profiter.<br>Savoir trouver le plaisir authentique.<br>Sentir, humer, d&eacute;guster, prendre le temps qu&rsquo;on veut.<br>Recommencer la recette 10 fois, 100 fois pour essayer autre chose.<br>Faire de sa cuisine un terrain de jeu.<br>Mettre la main &agrave; la p&acirc;te, mettre le doigt dans le pot.<br>Red&eacute;couvrir les go&ucirc;ts.<br>A chaque fois, comme si c&rsquo;&eacute;tait la premi&egrave;re fois.<br>Mettre &agrave; l&rsquo;aise.<br>Rire, sourire, lire dans les yeux et sur les l&egrave;vres.<br>Faire de sa tabl&eacute;e une &eacute;quip&eacute;e.<br>Dire que c&rsquo;est bon.<br>En redemander, se resservir. Raconter l&rsquo;histoire, belle telle qu&rsquo;elle est.<br>Go&ucirc;ter et faire go&ucirc;ter.<\/p>",
+              "link": "",
+              "button_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1591953749527",
+          "1592296908322",
+          "1592296927738",
+          "1592297006836",
+          "1592297170651",
+          "1593707902189",
+          "1594044928133",
+          "1594045376214",
+          "1592297233878",
+          "1592297292952"
+        ],
+        "settings": {}
+      },
+      "collection-custom-template": {
+        "type": "collection-custom-template",
+        "blocks": {
+          "1588843358856": {
+            "type": "menu",
+            "settings": {
+              "custom_menu_linklist": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "1588843358856"
+        ],
+        "settings": {
+          "display_collection_title": true,
+          "collection_breadcrumb": true,
+          "collection_tags": false,
+          "collection_sort": false,
+          "featured_collection_image": true,
+          "image": "",
+          "image_darken": false,
+          "products_per_row": 3,
+          "pagination_limit": 48,
+          "toggle": false,
+          "collectiona": "coups-de-coeur-sucres",
+          "collectionb": "confitures-fruits-rouges",
+          "collectionc": "confitures-artisanales-fruits-ete",
+          "collectiond": "confitures-fruits-dautomne",
+          "collectione": "confitures-artisanales-agrumes",
+          "collectionf": "confitures-fruits-exotiques",
+          "collectiong": "confitures-artisanales-de-fleurs",
+          "collectionh": "pates-a-tartiner-et-cremes",
+          "collectioni": "miels",
+          "collectionj": "confitures-pure-origine-france",
+          "collectionk": "confitures-et-gourmandises-bio",
+          "seo_text": ""
+        }
+      },
+      "1588237417117": {
+        "type": "featured-text",
+        "settings": {
+          "title": "",
+          "svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0300\/2030\/5034\/files\/20200512_pictosepicurien_avion.png?v=1593431005",
+          "subtitle": "",
+          "content": "",
+          "button_label": "",
+          "text_size": "featured_text",
+          "text_alignment": "center"
+        }
+      },
+      "1588255057687": {
+        "type": "custom-html",
+        "settings": {
+          "custom_html": "<span class=\"savourez\">Savourez chaque bouchée<\/span>"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "wide_display": true,
+          "featured_collection_image": false,
+          "image_darken": false,
+          "image": "shopify:\/\/shop_images\/Rectangle_72_2.png",
+          "display_collection_title": false,
+          "top_banner_height": 300,
+          "product_thumbs": true,
+          "gallery_arrows": true,
+          "enable_product_lightbox": true,
+          "activate_zoom": true,
+          "slideshow_speed": 0,
+          "slideshow_animation": "slide",
+          "thumbnail_position": "bottom",
+          "enable_thumbnail_slider": true,
+          "display_vendor": false,
+          "product_breadcrumb": true,
+          "display_sku": false,
+          "display_collections": false,
+          "display_type": false,
+          "display_tags": false,
+          "display_social_buttons": true,
+          "product_description_position": "bottom",
+          "display_savings": true,
+          "show_payment_button": false,
+          "product_images_position": "left",
+          "set_product_height": false,
+          "product_height": 500,
+          "video_looping": false,
+          "enable_shopify_product_badges": false,
+          "review_position": "next_to_gallery",
+          "display_recently_viewed": false,
+          "rv_title": "Recently Viewed Items",
+          "rv_products_style": "grid",
+          "rv_max_display": 4,
+          "rv_per": 4,
+          "toggle": false
+        }
+      },
+      "recently-viewed": {
+        "type": "recently-viewed",
+        "settings": {
+          "rv_title": "Produits récemment consultés",
+          "rv_products_style": "grid",
+          "rv_max_display": 3,
+          "rv_per": 3
+        }
+      },
+      "image-text": {
+        "type": "image-text",
+        "settings": {
+          "frontpage_grid_style": false,
+          "featured_links_per_row": "1",
+          "frontpage_text_align": "left",
+          "frontpage_image_position": "right"
+        }
+      },
+      "icon-row": {
+        "type": "icon-row",
+        "blocks": {
+          "1588611538944": {
+            "type": "text",
+            "settings": {
+              "icon-new": "shopify:\/\/shop_images\/20200512_pictosepicurien_legumes.jpg",
+              "title": "Ingrédients naturels",
+              "title_strong": false,
+              "content": "",
+              "show_borders": false
+            }
+          },
+          "1588611589827": {
+            "type": "text",
+            "settings": {
+              "icon-new": "shopify:\/\/shop_images\/20200512_pictosepicurien_bol.jpg",
+              "title": "Fabrication artisanale",
+              "title_strong": false,
+              "content": "",
+              "show_borders": true
+            }
+          },
+          "1588611617046": {
+            "type": "text",
+            "settings": {
+              "icon-new": "shopify:\/\/shop_images\/20200512_pictosepicurien_fr.jpg",
+              "title": "Hérault (France)",
+              "title_strong": false,
+              "content": "",
+              "show_borders": false
+            }
+          }
+        },
+        "block_order": [
+          "1588611538944",
+          "1588611589827",
+          "1588611617046"
+        ],
+        "settings": {
+          "color_icons_bg": "rgba(0,0,0,0)",
+          "color_icons_text": "#000000",
+          "row-title": "",
+          "title_font_size": 16,
+          "subtitle": "",
+          "subtitle_font_size": 12,
+          "show_long_text": false,
+          "text-over-icons": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Gallery, and Slideshow sections.",
+          "text_over_icons_font_size": 16,
+          "subtext": "",
+          "icon_height": 100,
+          "show_button": false,
+          "sub-cta": "En savoir plus",
+          "link": "",
+          "cta_color": "#ffffff",
+          "cta_bg": "#333333",
+          "cta_border": "transparent",
+          "block_title_font_size": 16,
+          "content_font_size": 8
+        }
+      },
+      "logo-bar": {
+        "type": "logo-bar",
+        "blocks": {
+          "1588669187182": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Vector_4.png"
+            }
+          },
+          "1588669196282": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Vector_3.png"
+            }
+          },
+          "1591207915085": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/youtube-30x30.png"
+            }
+          },
+          "1591207926000": {
+            "type": "logo_image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/pinterest-30x30.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1588669187182",
+          "1588669196282",
+          "1591207915085",
+          "1591207926000"
+        ],
+        "settings": {
+          "title": "#savouronsensemble"
+        }
+      },
+      "featured-blog": {
+        "type": "featured-blog",
+        "settings": {
+          "title": "Vive l'épiphanie",
+          "blog_widget_select": "news",
+          "home_page_articles": 3,
+          "blog_tags": false,
+          "blog_author": false,
+          "read_time": true,
+          "blog_date": true,
+          "blog_comment_count": true,
+          "read_more_link": true
+        }
+      },
+      "featured-collection": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "pour réaliser cette recette :",
+          "collection_description": true,
+          "collection": "fruits-dete",
+          "collection_style": "slider",
+          "products_per": 3,
+          "products_limit": 9,
+          "blog_additional_posts": true,
+          "bottom_link": "Voir tous les produits",
+          "link": ""
+        }
+      },
+      "page-details-template4": {
+        "type": "page-details-template4",
+        "blocks": {
+          "page-details-template4-0": {
+            "type": "image_with_text_overlay",
+            "settings": {
+              "wide_display": true,
+              "image": "shopify:\/\/shop_images\/Verrines-chia-l.jpg",
+              "pretext": "<p>Introducing Your<\/p>",
+              "title": "Page Details Template",
+              "subtitle": "<p>Let's Get Started!<\/p>",
+              "caption_background": false,
+              "caption_background_transparency": false,
+              "text_position": "center",
+              "text_align": "center",
+              "button1": "Button",
+              "button1_link": "",
+              "button1_highlight": false,
+              "button2": "",
+              "button2_link": "",
+              "button2_highlight": false,
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "mobile_text_color": ""
+            }
+          },
+          "1589553793655": {
+            "type": "custom_html",
+            "settings": {
+              "custom_html": "Cette section ne contient actuellement aucun contenu. Ajoutez-en en utilisant la barre latérale.\nCette section ne contient actuellement aucun contenu. Ajoutez-en en utilisant la barre latérale.\nCette section ne contient actuellement aucun contenu. Ajoutez-en en utilisant la barre latérale.\nCette section ne contient actuellement aucun contenu. Ajoutez-en en utilisant la barre latérale."
+            }
+          },
+          "1589553895837": {
+            "type": "custom_html",
+            "settings": {
+              "custom_html": "<center>Découvrez toutes mes recettes !<br>\n\n<a href=\"#\" class=\"action_button cc-button\">Button<\/a>\n<a href=\"#\" class=\"action_button cc-button\">Button<\/a>\n<\/center>"
+            }
+          },
+          "1589553979428": {
+            "type": "rich_text_and_image",
+            "settings": {
+              "image": "",
+              "title": "Les tartinades de Nino",
+              "content": "",
+              "text_size": "featured_text",
+              "text_alignment": "center",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1589554007903": {
+            "type": "image_gallery",
+            "settings": {
+              "wide_display": false,
+              "detail_image_1": "",
+              "detail_image_2": "",
+              "detail_image_3": ""
+            }
+          },
+          "1589554023628": {
+            "type": "image_gallery",
+            "settings": {
+              "wide_display": false,
+              "detail_image_1": "shopify:\/\/shop_images\/Capture_d_ecran_2020-04-15_a_18.37_1.png",
+              "detail_image_2": "shopify:\/\/shop_images\/visuel-contact.png",
+              "detail_image_3": ""
+            }
+          },
+          "1589554145549": {
+            "type": "contact_form",
+            "settings": {
+              "contact_heading": "Get in touch",
+              "contact_subheading": "Leave a message",
+              "contact_content": "<p>Use this text to include important information that you'd like your customers to be aware of when contacting you. You could include shop hours, email response times, other ways to contact you, or just some friendly text to encourage your customers to reach out.<\/p>",
+              "contact_text_position": "center",
+              "contact_text_alignment": "left"
+            }
+          }
+        },
+        "block_order": [
+          "page-details-template4-0",
+          "1589553793655",
+          "1589553895837",
+          "1589553979428",
+          "1589554007903",
+          "1589554023628",
+          "1589554145549"
+        ],
+        "settings": {}
+      },
+      "registration-form": {
+        "type": "registration-form",
+        "settings": {
+          "text": ""
+        }
+      },
+      "page-details-template3": {
+        "type": "page-details-template3",
+        "blocks": {
+          "page-details-template3-0": {
+            "type": "image_with_text_overlay",
+            "settings": {
+              "wide_display": true,
+              "image": "shopify:\/\/shop_images\/Nos-producteurs-Collection-LEpicurien.jpg",
+              "pretext": "",
+              "title": "Nos producteurs",
+              "subtitle": "",
+              "caption_background": false,
+              "caption_background_transparency": false,
+              "text_position": "center",
+              "text_align": "center",
+              "button1": "",
+              "button1_link": "",
+              "button1_highlight": false,
+              "button2": "",
+              "button2_link": "",
+              "button2_highlight": false,
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "mobile_text_color": ""
+            }
+          },
+          "1593454465812": {
+            "type": "blog_posts",
+            "settings": {
+              "title": "Nos producteurs",
+              "blog_widget_select": "producteurs",
+              "home_page_articles": 4,
+              "blog_tags": false,
+              "blog_author": false,
+              "blog_date": true,
+              "blog_comment_count": true,
+              "read_more_link": true
+            }
+          }
+        },
+        "block_order": [
+          "page-details-template3-0",
+          "1593454465812"
+        ],
+        "settings": {}
+      },
+      "page-gallery-template": {
+        "type": "page-gallery-template",
+        "blocks": {
+          "page-gallery-template-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/menu-confiture.jpg",
+              "image_link": ""
+            }
+          },
+          "page-gallery-template-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Verrine-Chia-Yaourt-Confiture-LEpicurien-c.jpg",
+              "image_link": ""
+            }
+          },
+          "page-gallery-template-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Rectangle_81.png",
+              "image_link": ""
+            }
+          },
+          "page-gallery-template-3": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/visuel-contact.png",
+              "image_link": ""
+            }
+          },
+          "page-gallery-template-4": {
+            "type": "image",
+            "settings": {
               "image": "shopify:\/\/shop_images\/Rectangle_7_2.png",
+              "image_link": ""
+            }
+          },
+          "page-gallery-template-5": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "image_link": ""
+            }
+          },
+          "page-gallery-template-6": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "image_link": ""
+            }
+          },
+          "page-gallery-template-7": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "image_link": ""
+            }
+          },
+          "page-gallery-template-8": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "image_link": ""
+            }
+          },
+          "page-gallery-template-9": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "image_link": ""
+            }
+          },
+          "1589977358763": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "image_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "page-gallery-template-0",
+          "page-gallery-template-1",
+          "page-gallery-template-2",
+          "page-gallery-template-3",
+          "page-gallery-template-4",
+          "page-gallery-template-5",
+          "page-gallery-template-6",
+          "page-gallery-template-7",
+          "page-gallery-template-8",
+          "page-gallery-template-9",
+          "1589977358763"
+        ],
+        "settings": {
+          "show_divider": false,
+          "full_width": false,
+          "gallery_type": "masonry",
+          "grid-size": 4,
+          "enable_lightbox": true
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "display_special_instructions": true,
+          "display_savings": true,
+          "cart_message": ""
+        }
+      },
+      "mega-menu-2": {
+        "type": "mega-menu-2",
+        "blocks": {
+          "mega-menu-2-0": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-1": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "saveurs-salees",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-2": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "kits-pour-lapero",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-3": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/Mega-menu-tartinables.jpg",
+              "image_caption_top": "Découvrez nos tartinables pour l'apéritif",
+              "menu_1": "",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-2-4": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-2-0",
+          "mega-menu-2-1",
+          "mega-menu-2-2",
+          "mega-menu-2-3",
+          "mega-menu-2-4"
+        ],
+        "settings": {
+          "parent": "Tartinables"
+        }
+      },
+      "mega-menu-3": {
+        "type": "mega-menu-3",
+        "blocks": {
+          "mega-menu-3-0": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-3-1": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "saveurs-a-cuisiner",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-3-2": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "moments-a-table",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-3-3": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/Mega-menu-aides-culinaires.jpg",
+              "image_caption_top": "Découvrez nos sauces, marinades, pesto, confits et condiments",
+              "menu_1": "",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-3-4": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-3-0",
+          "mega-menu-3-1",
+          "mega-menu-3-2",
+          "mega-menu-3-3",
+          "mega-menu-3-4"
+        ],
+        "settings": {
+          "parent": "En cuisine"
+        }
+      },
+      "mega-menu-5": {
+        "type": "mega-menu-5",
+        "blocks": {
+          "mega-menu-5-0": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-5-1": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "cadeaux",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-5-2": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_top": "shopify:\/\/shop_images\/PAS-Apero-Ambiance.jpg",
+              "image_caption_top": "Découvrez tous nos cadeaux gourmands",
+              "menu_1": "",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-5-3": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          },
+          "mega-menu-5-4": {
+            "type": "column",
+            "settings": {
+              "richtext_top": "",
+              "image_caption_top": "",
+              "menu_1": "",
+              "menu_2": "",
+              "menu_3": "",
+              "menu_4": "",
+              "image_caption_bottom": "",
+              "richtext_bottom": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega-menu-5-0",
+          "mega-menu-5-1",
+          "mega-menu-5-2",
+          "mega-menu-5-3",
+          "mega-menu-5-4"
+        ],
+        "settings": {
+          "parent": "Cadeaux"
+        }
+      },
+      "gallery_nino_1": {
+        "type": "gallery_nino_1",
+        "blocks": {
+          "1592904914656": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-barigoule-artichauts-1024.jpg"
+            }
+          },
+          "1592904928025": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-caviar-aubergines-1024.jpg"
+            }
+          },
+          "1592904939688": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-creme-carottes-1024.jpg"
+            }
+          },
+          "1592904952774": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-duo-tomates-1024.jpg"
+            }
+          },
+          "1592905046203": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-fenouil-cuisine-1024.jpg"
+            }
+          },
+          "1592905057372": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-houmous-1024.jpg"
+            }
+          },
+          "1592905072012": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-pissaladiere-1024.jpg"
+            }
+          },
+          "1592905084638": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-poelee-courgettes-1024.jpg"
+            }
+          },
+          "1592905098514": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-tapenade-noire-tomates-1024.jpg"
+            }
+          },
+          "1592905120128": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-salsa-poivrons-aubergines-1024.jpg"
+            }
+          },
+          "1592905166486": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-tapenade-verte-amandes-1024.jpg"
+            }
+          },
+          "1592905174871": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-tartinable-legumes-soleil-1024.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1592904914656",
+          "1592904928025",
+          "1592904939688",
+          "1592904952774",
+          "1592905046203",
+          "1592905057372",
+          "1592905072012",
+          "1592905084638",
+          "1592905098514",
+          "1592905120128",
+          "1592905166486",
+          "1592905174871"
+        ],
+        "settings": {
+          "wide_display": false,
+          "title": "",
+          "image_title": "https:\/\/cdn.shopify.com\/s\/files\/1\/0300\/2030\/5034\/files\/Titre-Tartinades-Nino.png?v=1591954688",
+          "gallery_type": "classic",
+          "grid-size": 4,
+          "enable_lightbox": true
+        }
+      },
+      "gallery_nino_2": {
+        "type": "gallery_nino_2",
+        "blocks": {
+          "1592905303988": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-pomme-citron-gingembre-1024.jpg"
+            }
+          },
+          "1592905312803": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-petales-de-roses-1024.jpg"
+            }
+          },
+          "1592905320199": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-peche-verveine-1024.jpg"
+            }
+          },
+          "1592905331472": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-pasteque-orange-1024.jpg"
+            }
+          },
+          "1592905344969": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-orange-amere-1024.jpg"
+            }
+          },
+          "1592905352406": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-melon-vanille-1024.jpg"
+            }
+          },
+          "1592905360720": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-framboise-1024.jpg"
+            }
+          },
+          "1592905369110": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-fraise-1024.jpg"
+            }
+          },
+          "1592905379086": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-figue-noire-provence-1024.jpg"
+            }
+          },
+          "1592905392833": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-figue-blanche-1024.jpg"
+            }
+          },
+          "1592905410402": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-citron-menton-1024.jpg"
+            }
+          },
+          "1592905425702": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-cerise-noire-1024.jpg"
+            }
+          },
+          "1592905437304": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/nino-confiture-abricot-1024.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1592905303988",
+          "1592905312803",
+          "1592905320199",
+          "1592905331472",
+          "1592905344969",
+          "1592905352406",
+          "1592905360720",
+          "1592905369110",
+          "1592905379086",
+          "1592905392833",
+          "1592905410402",
+          "1592905425702",
+          "1592905437304"
+        ],
+        "settings": {
+          "wide_display": false,
+          "title": "",
+          "image_title": "https:\/\/cdn.shopify.com\/s\/files\/1\/0300\/2030\/5034\/files\/Titre-Confitures-Nino.png?v=1591954688",
+          "gallery_type": "classic",
+          "grid-size": 4,
+          "enable_lightbox": true
+        }
+      },
+      "collection-custom-template2": {
+        "type": "collection-custom-template2",
+        "blocks": {
+          "1592834905163": {
+            "type": "menu",
+            "settings": {
+              "custom_menu_linklist": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "1592834905163"
+        ],
+        "settings": {
+          "display_collection_title": true,
+          "collection_breadcrumb": true,
+          "collection_tags": false,
+          "collection_sort": false,
+          "featured_collection_image": true,
+          "image": "",
+          "image_darken": false,
+          "products_per_row": 3,
+          "pagination_limit": 48,
+          "toggle": false,
+          "collectiona": "coups-de-coeur-sales",
+          "collectionb": "tartinables-decouvertes-de-lapero",
+          "collectionc": "tartinables-aperitif-mediterraneens",
+          "collectiond": "tartinables-olive",
+          "collectione": "tartinables-de-poisson",
+          "collectionf": "tartinables-festifs",
+          "collectiong": "cocktails-fruites",
+          "collectionh": "tartinables-aperitifs-bio",
+          "collectioni": "",
+          "collectionj": "",
+          "collectionk": "",
+          "seo_text": ""
+        }
+      },
+      "recently-viewed2": {
+        "type": "recently-viewed2",
+        "settings": {
+          "rv_title": "Recently viewed products",
+          "rv_products_style": "grid",
+          "rv_max_display": 6,
+          "rv_per": 4
+        }
+      },
+      "page-details-template2": {
+        "type": "page-details-template2",
+        "blocks": {
+          "page-details-template2-0": {
+            "type": "image_with_text_overlay",
+            "settings": {
+              "wide_display": true,
+              "image": "shopify:\/\/shop_images\/Nous-Collection-LEpicurien.jpg",
               "pretext": "",
               "title": "",
               "subtitle": "",
@@ -5388,98 +6368,357 @@
               "mobile_text_color": ""
             }
           },
-          "page-details-template-1": {
-            "type": "divider",
-            "settings": {
-              "divider_spacing": 20,
-              "divider_border": false
-            }
-          },
-          "1587051722834": {
+          "1592295590612": {
             "type": "image_with_text",
             "settings": {
               "layout": false,
               "frontpage_text_align": "left",
               "frontpage_image_position": "right",
-              "image": "shopify:\/\/shop_images\/Capture_d_ecran_2020-04-15_a_18.33_1.png",
+              "image": "shopify:\/\/shop_images\/Qui-sommes-Nous-IMG.jpg",
               "image_crop": "none",
               "title": "qui sommes-nous ?",
-              "text": "<p><span style=\"text-decoration: none;\">Tout a commenc&eacute; il y a pr&egrave;s de 40 ans dans l'arri&egrave;re-boutique d'une &eacute;picerie fine parisienne. Aujourd'hui, son esprit perdure... au c&oelig;ur du Languedoc-Roussillon. H&eacute;ritage d'un oncle ma&icirc;tre artisan confiturier, on en garde cette cuisson artisanale au chaudron, la cr&eacute;ation insatiable des associations de go&ucirc;ts, la pr&eacute;servation des textures, des saveurs d'ingr&eacute;dients tri&eacute;s sur le volet. Ce savoir-faire, Xavier l'a sublim&eacute;, Benoit l'a r&eacute;v&eacute;l&eacute;. Deux fr&egrave;res et un int&eacute;r&ecirc;t en commun : celui de r&eacute;veiller l'&eacute;picurien qui est en chacun de nous. Ce n'est que le d&eacute;but d'une aventure gourmande qui n'a de sens que dans le partage. Notre leitmotiv : la qualit&eacute; ! Nous sour&ccedil;ons les meilleurs fruits et l&eacute;gumes. Nous privil&eacute;gions les producteurs fran&ccedil;ais ou ceux qui produisent le meilleur ingr&eacute;dient sur leur territoire. Simplicit&eacute;, authenticit&eacute;, cr&eacute;ativit&eacute; sont nos seuls secrets de fabrication.<\/span><\/p>",
+              "text": "<p><span style=\"text-decoration: none;\">Tout a commenc&eacute; il y a pr&egrave;s de 40 ans dans l'arri&egrave;re-boutique d'une &eacute;picerie fine parisienne. Aujourd'hui, son esprit perdure... au c&oelig;ur du Languedoc-Roussillon. H&eacute;ritage d'un oncle ma&icirc;tre artisan confiturier, on en garde cette cuisson artisanale au chaudron, la cr&eacute;ation insatiable des associations de go&ucirc;ts, la pr&eacute;servation des textures, des saveurs d'ingr&eacute;dients tri&eacute;s sur le volet. Ce savoir-faire, Xavier l'a sublim&eacute;, Benoit l'a r&eacute;v&eacute;l&eacute;. Deux fr&egrave;res et un int&eacute;r&ecirc;t en commun : celui de r&eacute;veiller l'&eacute;picurien qui est en chacun de nous. Ce n'est que le d&eacute;but d'une aventure gourmande qui n'a de sens que dans le partage. Notre leitmotiv : la qualit&eacute; ! Nous sour&ccedil;ons les meilleurs fruits et l&eacute;gumes. Nous privil&eacute;gions les producteurs fran&ccedil;ais ou ceux qui produisent le meilleur ingr&eacute;dient sur leur territoire. Simplicit&eacute;, authenticit&eacute;, cr&eacute;ativit&eacute; sont nos seuls secrets de fabrication.<\/span><\/p>\n<p><\/p>",
               "link": "",
               "button_label": ""
             }
           },
-          "1587109252857": {
-            "type": "image_gallery",
+          "1592295728395": {
+            "type": "custom_html",
             "settings": {
-              "wide_display": false,
-              "detail_image_1": "shopify:\/\/shop_images\/Boss-Xavier.jpg",
-              "detail_image_2": "shopify:\/\/shop_images\/Boss-Benoit.JPG",
-              "detail_image_3": "shopify:\/\/shop_images\/Cathia.jpg"
+              "custom_html": "La fine équipe"
+            }
+          }
+        },
+        "block_order": [
+          "page-details-template2-0",
+          "1592295590612",
+          "1592295728395"
+        ],
+        "settings": {}
+      },
+      "collection-custom-template3": {
+        "type": "collection-custom-template3",
+        "blocks": {
+          "1592842070768": {
+            "type": "menu",
+            "settings": {
+              "custom_menu_linklist": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "1592842070768"
+        ],
+        "settings": {
+          "display_collection_title": true,
+          "collection_breadcrumb": true,
+          "collection_tags": false,
+          "collection_sort": false,
+          "featured_collection_image": true,
+          "image": "",
+          "image_darken": false,
+          "products_per_row": 3,
+          "pagination_limit": 48,
+          "toggle": false,
+          "collectiona": "coups-de-coeur-en-cuisine",
+          "collectionb": "sauces-et-marinades",
+          "collectionc": "chutneys-condiments",
+          "collectiond": "",
+          "collectione": "moutardes",
+          "collectionf": "huiles-et-vinaigres",
+          "collectiong": "champignons-secs",
+          "collectionh": "confits-pour-fromages",
+          "collectioni": "",
+          "collectionj": "",
+          "collectionk": "",
+          "seo_text": ""
+        }
+      },
+      "collection-custom-template4": {
+        "type": "collection-custom-template4",
+        "blocks": {
+          "1592842930610": {
+            "type": "menu",
+            "settings": {
+              "custom_menu_linklist": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "1592842930610"
+        ],
+        "settings": {
+          "display_collection_title": true,
+          "collection_breadcrumb": true,
+          "collection_tags": false,
+          "collection_sort": false,
+          "featured_collection_image": true,
+          "image": "",
+          "image_darken": false,
+          "products_per_row": 3,
+          "pagination_limit": 48,
+          "toggle": false,
+          "collectiona": "confitures-cadeaux-messages",
+          "collectionb": "mini-coffrets-cadeaux",
+          "collectionc": "coffrets-trio-cadeaux",
+          "collectiond": "beaux-cadeaux",
+          "collectione": "",
+          "collectionf": "",
+          "collectiong": "",
+          "collectionh": "",
+          "collectioni": "",
+          "collectionj": "",
+          "collectionk": "",
+          "seo_text": ""
+        }
+      },
+      "collection-custom-template5": {
+        "type": "collection-custom-template5",
+        "blocks": {
+          "1592844395896": {
+            "type": "menu",
+            "settings": {
+              "custom_menu_linklist": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "1592844395896"
+        ],
+        "settings": {
+          "display_collection_title": true,
+          "collection_breadcrumb": true,
+          "collection_tags": false,
+          "collection_sort": false,
+          "featured_collection_image": true,
+          "image": "",
+          "image_darken": false,
+          "products_per_row": 3,
+          "pagination_limit": 48,
+          "toggle": false,
+          "collectiona": "confitures-et-gourmandises-bio",
+          "collectionb": "tartinables-aperitifs-bio",
+          "collectionc": "",
+          "collectiond": "",
+          "collectione": "",
+          "collectionf": "",
+          "collectiong": "",
+          "collectionh": "",
+          "collectioni": "",
+          "collectionj": "",
+          "collectionk": "",
+          "seo_text": ""
+        }
+      },
+      "page-details-template-nino": {
+        "type": "page-details-template-nino",
+        "blocks": {
+          "page-details-template-nino-0": {
+            "type": "image_with_text_overlay",
+            "settings": {
+              "wide_display": true,
+              "image": "shopify:\/\/shop_images\/Ambiance-Nino-HP-OK.jpg",
+              "pretext": "",
+              "title": "",
+              "subtitle": "",
+              "caption_background": false,
+              "caption_background_transparency": false,
+              "text_position": "center",
+              "text_align": "center",
+              "button1": "",
+              "button1_link": "",
+              "button1_highlight": false,
+              "button2": "",
+              "button2_link": "",
+              "button2_highlight": false,
+              "mobile_image_crop": "none",
+              "mobile_text_below_image": true,
+              "mobile_text_color": ""
             }
           },
-          "1587109792237": {
+          "1592988322847": {
             "type": "rich_text_and_image",
             "settings": {
               "image": "",
               "title": "",
-              "content": "<p><span style=\"text-decoration: none;\">Nous, c'est aussi une &eacute;quipe d'&eacute;picurieux passionn&eacute;s. Hyper actifs des sens, nous sommes en qu&ecirc;te constante du Go&ucirc;t. En cuisine, exigence et rigueur sont nos ma&icirc;tre mots. A table, place au partage et &agrave; la convivialit&eacute; !<\/span><\/p>",
-              "text_size": "regular_text",
-              "text_alignment": "center",
-              "button_label": "",
-              "button_link": ""
-            }
-          },
-          "1587109826729": {
-            "type": "rich_text_and_image",
-            "settings": {
-              "image": "",
-              "title": "c’est quoi, être épicurien ?",
-              "content": "",
+              "content": "<p>Tout le monde connait Nino, l&rsquo;enfant du pays.<br>&Agrave; bord de son bateau Riva, il incarne l&rsquo;esprit de la Riviera.<br>N&eacute; dans la garrigue, Nino connait mieux que personne les secrets de la r&eacute;gion.<br>Chapeau viss&eacute; sur la t&ecirc;te, brin de lavande au bec, profil charismatique&hellip;<br>Nino, c&rsquo;est l&rsquo;ami qui nous emm&egrave;ne loin &agrave; la d&eacute;couverte des plaisirs de la C&ocirc;te d&rsquo;Azur.<\/p>",
               "text_size": "featured_text",
               "text_alignment": "center",
               "button_label": "",
               "button_link": ""
             }
-          },
-          "1587109851552": {
-            "type": "image_with_text",
+          }
+        },
+        "block_order": [
+          "page-details-template-nino-0",
+          "1592988322847"
+        ],
+        "settings": {}
+      },
+      "nino_btns": {
+        "type": "nino_btns",
+        "settings": {
+          "title": "Découvrez toutes mes recettes",
+          "btn1_text": "Les tartinades de Nino",
+          "btn2_text": "Les confitures de Nino"
+        }
+      },
+      "blog-template2": {
+        "type": "blog-template2",
+        "settings": {
+          "blogtitle": "Rencontres",
+          "blog_widget_select": "les-interviews-a-la-une",
+          "home_page_articles": 3,
+          "wide_display": true,
+          "blog_main_title": "",
+          "image": "shopify:\/\/shop_images\/Nos-producteurs-Collection-LEpicurien.jpg",
+          "image_darken": false,
+          "subtitle": "D'où viennent nos ingrédients",
+          "blog_posts_per_row": 3,
+          "blog_posts_per_page": 12,
+          "blog_tags": false,
+          "blog_author": false,
+          "read_time": true,
+          "blog_date": true,
+          "blog_comment_count": true,
+          "read_more_link": true,
+          "toggle": false,
+          "text_link1": "",
+          "text_link2": "",
+          "link1": "",
+          "link2": ""
+        }
+      },
+      "blog-template3": {
+        "type": "blog-template3",
+        "settings": {
+          "blogtitle": "",
+          "blog_widget_select": "les-interviews-a-la-une",
+          "home_page_articles": 3,
+          "wide_display": true,
+          "blog_main_title": "Partage d'expériences",
+          "image": "shopify:\/\/shop_images\/Les-epicuriens-Collection-LEpicurien-2.jpg",
+          "image_darken": false,
+          "subtitle": "Ils témoignent",
+          "blog_posts_per_row": 3,
+          "blog_posts_per_page": 12,
+          "blog_tags": false,
+          "blog_author": false,
+          "read_time": true,
+          "blog_date": true,
+          "blog_comment_count": true,
+          "read_more_link": true,
+          "toggle": false,
+          "text_link1": "",
+          "text_link2": "",
+          "link1": "",
+          "link2": ""
+        }
+      },
+      "search-template": {
+        "type": "search-template",
+        "settings": {
+          "image": "",
+          "image_darken": false,
+          "search_breadcrumb": true,
+          "search_term": "une envie ?",
+          "products_per_row": 3,
+          "pagination_limit": 48,
+          "blog_author": false,
+          "read_more_link": true,
+          "blog_date": false,
+          "toggle": false
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "page-faq-template-0": {
+            "type": "heading",
             "settings": {
-              "layout": false,
-              "frontpage_text_align": "left",
-              "frontpage_image_position": "left",
-              "image": "shopify:\/\/shop_images\/Capture_d_ecran_2020-04-15_a_18.37_1.png",
-              "image_crop": "none",
-              "title": "Etre épicurien",
-              "text": "<p><span style=\"text-decoration: none;\">Avoir envie. <br>Aimer manger. <br>Etre curieux de choses nouvelles. <br>Savourer chaque bouch&eacute;e. <br>Appr&eacute;cier avec le c&oelig;ur. <br>Profiter. <br>Savoir trouver le plaisir authentique. <br>Sentir, humer, d&eacute;guster, prendre le temps qu&rsquo;on veut. <br>Recommencer la recette 10 fois, 100 fois pour essayer autre chose. <br>Faire de sa cuisine un terrain de jeu. <br>Mettre la main &agrave; la p&acirc;te, mettre le doigt dans le pot. <br>Red&eacute;couvrir les go&ucirc;ts. <br>A chaque fois, comme si c&rsquo;&eacute;tait la premi&egrave;re fois. <br>Mettre &agrave; l&rsquo;aise. <br>Rire, sourire, lire dans les yeux et sur les l&egrave;vres. <br>Faire de sa tabl&eacute;e une &eacute;quip&eacute;e. <br>Dire que c&rsquo;est bon. <br>En redemander, se resservir. Raconter l&rsquo;histoire, belle telle qu&rsquo;elle est. <br>Go&ucirc;ter et faire go&ucirc;ter.<\/span><\/p>",
-              "link": "",
-              "button_label": ""
+              "heading": "Section"
+            }
+          },
+          "page-faq-template-1": {
+            "type": "Content",
+            "settings": {
+              "title": "Title",
+              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+            }
+          },
+          "page-faq-template-2": {
+            "type": "Content",
+            "settings": {
+              "title": "Title",
+              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+            }
+          },
+          "page-faq-template-3": {
+            "type": "Content",
+            "settings": {
+              "title": "Title",
+              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+            }
+          },
+          "page-faq-template-4": {
+            "type": "heading",
+            "settings": {
+              "heading": "Section"
+            }
+          },
+          "page-faq-template-5": {
+            "type": "Content",
+            "settings": {
+              "title": "Title",
+              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
+            }
+          },
+          "page-faq-template-6": {
+            "type": "Content",
+            "settings": {
+              "title": "Title",
+              "subtitle": "<p>Include a helpful and informative answer to the frequently asked question here.<\/p>"
             }
           }
         },
         "block_order": [
-          "page-details-template-0",
-          "page-details-template-1",
-          "1587051722834",
-          "1587109252857",
-          "1587109792237",
-          "1587109826729",
-          "1587109851552"
+          "page-faq-template-0",
+          "page-faq-template-1",
+          "page-faq-template-2",
+          "page-faq-template-3",
+          "page-faq-template-4",
+          "page-faq-template-5",
+          "page-faq-template-6"
         ],
-        "settings": {}
+        "settings": {
+          "wide_display": true,
+          "image": "",
+          "pretext": "",
+          "title": "Page FAQ Template",
+          "subtitle": "<p>Create an amazing FAQ page with a full-width banner<\/p>",
+          "caption_background": false,
+          "caption_background_transparency": false,
+          "text_position": "center",
+          "text_align": "center",
+          "button1": "",
+          "button1_link": "",
+          "button1_highlight": false,
+          "button2": "",
+          "button2_link": "",
+          "button2_highlight": false
+        }
       }
     },
     "content_for_index": [
       "1489283389016",
-      "1586955069408",
+      "1588255057687",
       "1586955554077",
       "1587027499326",
       "1587027679891",
       "1587029946227",
       "1587029965832",
       "1587030503439",
-      "1587030898399",
-      "1587030974627",
+      "1588237417117",
       "1587031012600",
       "1587031851812",
       "1587031962358"

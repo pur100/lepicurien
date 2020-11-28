@@ -1,0 +1,46 @@
+<div class="container">
+  <h2 class="nino_recipes">{{ section.settings.title }}</h2>
+  <div class="btns">
+    <button class="nino_btns" id="nino_btn_1" style="background-color: rgb(38,55,128)"><a href="#nino_tart">{{ section.settings.btn1_text }}</a></button>
+    <button class="nino_btns" id="nino_btn_2" style="background-color: rgb(206,25,27)"><a href="#nino_conf">{{ section.settings.btn2_text }}</a></button>
+  </div>
+</div>
+
+<style>
+  .btns {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom : 90px;
+    margin-top: 60px;
+  }
+
+  .nino_btns > a {
+    padding: 10px 10px;
+    color: white;
+  }
+</style>
+{% schema %}
+  {
+    "name": "Nino buttons",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Découvrir toutes mes recettes"
+      },
+       {
+        "type": "text",
+        "id": "btn1_text",
+        "label": "Texte bouton 1",
+        "default": "Les tartinades de Nino"
+      },
+       {
+        "type": "text",
+        "id": "btn2_text",
+        "label": "Texte bouton 2",
+        "default": "Les confitures de Nino"
+      }
+    ]
+  }
+{% endschema %}

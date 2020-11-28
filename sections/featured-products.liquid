@@ -172,6 +172,7 @@
                 </div>
               {% elsif section.settings.frontpage_display_description and product.description != blank %}
                 <div class="description bottom">
+
                   {{ product.description | split: '<!-- split -->' | first }}
                 </div>
 

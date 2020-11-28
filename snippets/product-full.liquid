@@ -87,6 +87,7 @@
         {% if settings.product_description_position == "bottom" %}
           {% if settings.frontpage_display_description and product.description != blank %}
             <div class="description bottom">
+
             {{ product.description | split: '<!-- split -->' | first }}
             </div>
           {% endif %}
@@ -95,3 +96,5 @@
     </div>
   </div>
 {% endfor %}
+
+

@@ -98,6 +98,7 @@
       </div>
     </div>
   {% endif %}
+
   <div class="dropdown_container" data-dropdown="menu">
     <div class="dropdown">
       <ul class="menu" id="mobile_menu">
@@ -182,7 +183,9 @@
         {% endif %}
         {% if section.settings.top_bar_menu != blank %}
           {% for link in linklists[section.settings.top_bar_menu].links %}
-            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            <li>
+              <a href="https://epicurien.com/#newsletter_go" class="desktop">{{ link.title }}</a>
+            </li>
           {% endfor %}
         {% endif %}
       </ul>

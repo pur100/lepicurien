@@ -1,6 +1,8 @@
 {% if section.blocks.size > 0 %}
   <div class="sidebar four columns medium-down--one-whole">
     <div class="sidebar_content toggle-all--{{ section.settings.toggle }}">
+      <div class="sidebarlink1"><a href="{{ section.settings.link1 }}">{{ section.settings.text_link1 }}</a></div>
+      <div style="margin-bottom: 20px;" class="sidebarlink2"><a href="{{ section.settings.link2 }}">{{ section.settings.text_link2 }}</a></div>
       {% for block in section.blocks %}
         <div class="sidebar-block" {{ block.shopify_attributes }}>
           {% if block.type == 'menu' %}

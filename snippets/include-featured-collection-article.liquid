@@ -1,0 +1,219 @@
+
+  {% assign title = section.settings.collection_title %}
+  {% assign collection_style = section.settings.collection_style %}
+  {% assign collection_description = section.settings.collection_description %}
+  {% assign products_per = section.settings.products_per %}
+  {% assign products_limit = section.settings.products_limit %}
+
+{% if settingCollection == blank %}
+  {%- assign section_onboarding = true -%}
+  {% comment %}assign product length to be selected limit for onboarding{% endcomment %}
+  {% assign products_length = products_limit | plus: 0 %}
+{% else %}
+  {%- assign section_onboarding = false -%}
+{% endif %}
+
+<div class="container featured_products product-{{ collection_style }}">
+  <div class="sixteen columns center homepage_content">
+    {% if title != blank %}
+      <a href="{{ collections[settingCollection].url }}"><h2 class="title">{{ title }}</h2></a>
+      <div class="feature_divider"></div>
+    {% endif %}
+    {% if collection_description and collections[settingCollection].description != blank %}
+      <div class="section clearfix featured-collection__description">
+        {{ collections[settingCollection].description }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% assign limit = products_limit %}
+
+{% if collection_style == 'slider' %}
+  {% assign col = settingCollection | handleize %}
+  {% assign products = collections[col].products %}
+  {% assign product_count = collections[col].all_products_count %}
+  {% assign per_slide = products_per %}
+
+  <div class="container js-product-slider homepage-product-slider full-width--true {% if per_slide == 2 or per_slide == 4 or per_slide == 6 %}even-num-slides{% endif %} featured-collection__products">
+    {% if section_onboarding == false %}
+      {% if product_count > 0 %}
+        {% include 'product-slider', per_slide: products_per, featured_collection: col  %}
+      {% endif %}
+    {% else %}
+      <div class="slider-gallery products-slider products-length-{{ products_length }}"
+            data-products-per-slide="{{ per_slide }}"
+            data-products-limit="{{ limit }}"
+            data-products-available="{{ products_length }}">
+        {% for i in (1..limit) %}
+          {% assign per_slide_num = products_per | plus: 0 %}
+          <div class="gallery-cell thumbnail
+          {% if products_length > per_slide_num %}visible-{{ per_slide }}{% else %}visible-{{ products_length }}{% endif %}
+          ">
+            <div class="product-wrap">
+              <div class="relative product_image">
+                <a href="#">
+                  <object class="placeholder-image">
+                    {% capture num %}{% cycle "1", "2", "3", "4", "5", "6" %}{% endcapture %}
+                    {{ 'product-' | append: num | placeholder_svg_tag: 'placeholder-svg placeholder-svg--product' }}
+                  </object>
+                </a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% else %}
+  {% if section_onboarding == false %}
+    {% assign limit = products_limit %}
+    {% assign collection = collections[settingCollection] %}
+    {% assign products = collections[settingCollection].products %}
+    {% assign products_per_row = products_per %}
+    <div class="container featured-collection__products">
+      <div class="sixteen columns">
+        {% include 'product-loop' %}
+      </div>
+    </div>
+  {% else %}
+    {% assign products_per_row = products_per %}
+    <div class="container equal-columns--outside-trim">
+      <div class="sixteen columns">
+        {% capture new_row %}
+            <br class="clear product_clear" />
+        {% endcapture %}
+
+        <div class="product-list collection-matrix clearfix">
+          {% for i in (1..limit) %}
+            {% comment %}{% assign collection_group = products | map: 'id' %}{% endcomment %}
+            {% assign collection_group_thumb = collection_group | append : 'thumb' %}
+            {% assign collection_group_mobile = collection_group | append : 'mobile' %}
+              <div class="
+              {% if settings.collection_secondary_image != blank and product.media[1] != blank %}
+                has-secondary-media-swap
+              {% endif %}
+              {% if products_per_row == 2 %}
+                eight columns {% cycle collection_group_thumb: 'alpha', 'omega' %}
+              {% elsif products_per_row == 3 %}
+                one-third column {% cycle collection_group_thumb: 'alpha', '', 'omega' %}
+              {% elsif products_per_row == 4 %}
+                four columns {% cycle collection_group_thumb: 'alpha', '', '', 'omega' %}
+              {% elsif products_per_row == 5 %}
+                one-fifth column {% cycle collection_group_thumb: 'alpha', '', '', '', 'omega' %}
+              {% elsif products_per_row == 6 %}
+                one-sixth column {% cycle collection_group_thumb: 'alpha', '', '', '', '', 'omega' %}
+              {% else %}
+                one-seventh column {% cycle collection_group_thumb: 'alpha', '', '', '', '', '', 'omega' %}
+              {% endif %} thumbnail {% cycle collection_group_mobile: 'even', 'odd' %}
+              {% if settings.mobile_products_per_row == '1' %}
+                medium-down--one-half
+                small-down--one-whole
+              {% else %}
+                medium-down--one-half
+                small-down--one-half
+              {% endif %}">
+
+              <div class="product-wrap">
+                <div class="relative product_image">
+                  <a href="#">
+                    {% capture num %}{% cycle "1", "2", "3", "4", "5", "6" %}{% endcapture %}
+                    {{ 'product-' | append: num | placeholder_svg_tag: 'placeholder-svg placeholder-svg--product' }}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {% if products_per_row == 2 %}
+              {% cycle collection_group: '', new_row %}
+            {% elsif products_per_row == 3 %}
+              {% cycle collection_group: '', '', new_row %}
+            {% elsif products_per_row == 4 %}
+              {% cycle collection_group: '', '', '', new_row %}
+            {% elsif products_per_row == 5 %}
+              {% cycle collection_group: '', '', '', '', new_row %}
+            {% elsif products_per_row == 6 %}
+              {% cycle collection_group: '', '', '', '', '', new_row %}
+            {% elsif products_per_row == 7 %}
+              {% cycle collection_group: '', '', '', '', '', '', new_row %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endif %}
+
+
+    {% if section.settings.blog_additional_posts and blog.articles_count > 1 %}
+      <div class="section clearfix" style="width: 85%; margin: 0 auto;">
+        <h2 class="related_articles_title">{{ 'blogs.article.additional_articles' | t: title: blog.title }}</h2>
+
+        {% assign article_found = false %}
+        {% for a in blog.articles limit: 4 %}
+          {% assign skip_article = false %}
+          {% if article_found == false and forloop.last %}
+            {% assign skip_article = true %}
+          {% endif %}
+          {% if article.id == a.id %}
+            {% assign article_found = true %}
+            {% assign skip_article = true %}
+          {% endif %}
+          {% unless skip_article %}
+            <div class="one-fourth columns article">
+              {% for tag in article.tags %}
+              {% if tag contains 'cdn' %}
+                <a href="{{ article.url }}" title="{{ article.title | escape }}">
+                  <img src="{{ tag }}" alt="">
+                </a>
+              {% endif %}
+          {% endfor %}
+
+
+
+              <h5 class="sub_title">
+                <a href="{{ a.url }}" title="{{ a.title | escape }}">{{ a.title }}</a>
+              </h5>
+              <p class="blog_meta">
+                {% if section.settings.blog_byline %}
+                  <span>{{ 'blogs.article.by_author' | t: author: a.author }}</span>
+                {% endif %}
+
+                {% if section.settings.blog_date %}
+                  <span>{{ a.published_at | date: format: "month_day_year" }}</span>
+                {% endif %}
+
+                {% if section.settings.read_time %}
+                  {% include 'include-read-time', article: a %}
+                {% endif %}
+
+                {% if settings.disqus_enabled %}
+                  <span>
+                    <a href="{{ a.url }}#disqus_thread" data-disqus-identifier="{{ a.id }}" class="disqus-comment-count">{{ 'blogs.counts.comments_with_count' | t: count: 0 }}</a>
+                  </span>
+                {% elsif section.settings.blog_comment_count and a.comments_count > 0 %}
+                  <span>
+                    <a href="{{ a.url }}#comments">{{ 'blogs.counts.comments_with_count' | t: count: a.comments_count }}</a>
+                  </span>
+                {% endif %}
+              </p>
+              {% if section.settings.blog_tags %}
+                <div class="blog_meta tags">
+                  {% for tag in a.tags %}
+                    <span><a href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" title="{{ blog.title | escape }} {{ 'blogs.general.tagged' | t }} {{ tag | escape }}">{{ tag }}</a></span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+
+
+              {% if a.excerpt != blank %}
+                <div class="excerpt">{{ a.excerpt }}</div>
+              {% endif %}
+              {% if section.settings.read_more_link %}
+                <a href="{{ a.url }}" title="{{ a.title | escape }}" {% if settings.read_more_style == 'button' %}class="action_button continue-button"{% endif %}>{{ 'blogs.general.continue_reading_html' | t }}</a>
+              {% endif %}
+            </div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}

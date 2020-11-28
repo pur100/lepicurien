@@ -34,7 +34,7 @@
 
       {% elsif block.type == 'image_gallery' %}
         <!-- Image gallery -->
-        {% include 'include-gallery', type: 'block' %}
+        {% include 'include-gallery-bis', type: 'block' %}
 
       {% elsif block.type == "image_with_text" %}
         <!-- Image with text -->
@@ -45,18 +45,7 @@
           featured_collections
           clearfix across-1 image-align--{{ block.settings.frontpage_image_position }}">
           <section class="featured-link--section featured-link--image section-{{ forloop.index }}">
-            <div class="featured-link--half featured-link--image {% if block.settings.layout == false %}featured-link--margin{% endif %} image-crop--{{ block.settings.image_crop }}">
-              <div class="featured-link--wrap">
-                <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} title="{{ block.settings.title }}">
-                  {% if block.settings.image %}
-                    {% include 'image-element', image: block.settings.image, alt: block.settings.image.alt %}
-                  {% else %}
-                    {% capture i %}{% cycle "1", "2", "3", "4", "5", "6" %}{% endcapture %}
-                    {{ 'collection-' | append: i | placeholder_svg_tag: 'placeholder-svg placeholder-svg--promotions' }}
-                  {% endif %}
-                </a>
-              </div>
-            </div>
+
             <div class="featured-link--half">
               <div class="info text-align--{{block.settings.frontpage_text_align}}">
                 <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} class="collection_title">
@@ -70,6 +59,18 @@
                     {{ block.settings.button_label }}
                   </a>
                 {% endif %}
+              </div>
+            </div>
+            <div class="featured-link--half featured-link--image {% if block.settings.layout == false %}featured-link--margin{% endif %} image-crop--{{ block.settings.image_crop }}">
+              <div class="featured-link--wrap">
+                <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} title="{{ block.settings.title }}">
+                  {% if block.settings.image %}
+                    {% include 'image-element', image: block.settings.image, alt: block.settings.image.alt %}
+                  {% else %}
+                    {% capture i %}{% cycle "1", "2", "3", "4", "5", "6" %}{% endcapture %}
+                    {{ 'collection-' | append: i | placeholder_svg_tag: 'placeholder-svg placeholder-svg--promotions' }}
+                  {% endif %}
+                </a>
               </div>
             </div>
           </section>
@@ -366,6 +367,18 @@
       "type": "image_gallery",
       "name": "Image gallery",
       "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_lightbox",
+        "label": "Enable lightbox",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Titre",
+        "default": "La fine équipe"
+      },
         {
           "type": "checkbox",
           "id": "wide_display",
@@ -379,16 +392,328 @@
           "info": "760 x 500px recommended"
         },
         {
+          "type": "url",
+          "id": "link1",
+          "label": "Link1"
+        },
+        {
           "type": "image_picker",
           "id": "detail_image_2",
           "label": "Image 2",
           "info": "760 x 500px recommended"
         },
         {
+          "type": "url",
+          "id": "link2",
+          "label": "Link2"
+        },
+          {
           "type": "image_picker",
           "id": "detail_image_3",
           "label": "Image 3",
           "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link3",
+          "label": "Link3"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_4",
+          "label": "Image 4",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link4",
+          "label": "Link4"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_5",
+          "label": "Image 5",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link5",
+          "label": "Link5"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_6",
+          "label": "Image 6",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link6",
+          "label": "Link6"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_7",
+          "label": "Image 7",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link7",
+          "label": "Link7"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_8",
+          "label": "Image 8",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link8",
+          "label": "Link8"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_9",
+          "label": "Image 9",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link9",
+          "label": "Link9"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_10",
+          "label": "Image 10",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link10",
+          "label": "Link10"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_11",
+          "label": "Image 11",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link11",
+          "label": "Link11"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_12",
+          "label": "Image 12",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link12",
+          "label": "Link12"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_13",
+          "label": "Image 13",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link13",
+          "label": "Link13"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_14",
+          "label": "Image 14",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link14",
+          "label": "Link14"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_15",
+          "label": "Image 15",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link15",
+          "label": "Link15"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_16",
+          "label": "Image 16",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link16",
+          "label": "Link16"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_17",
+          "label": "Image 17",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link17",
+          "label": "Link17"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_18",
+          "label": "Image 18",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link18",
+          "label": "Link18"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_19",
+          "label": "Image 19",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link19",
+          "label": "Link19"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_20",
+          "label": "Image 20",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link20",
+          "label": "Link20"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_21",
+          "label": "Image 21",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link21",
+          "label": "Link21"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_22",
+          "label": "Image 22",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link22",
+          "label": "Link22"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_23",
+          "label": "Image 23",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link23",
+          "label": "Link23"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_24",
+          "label": "Image 24",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link24",
+          "label": "Link24"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_25",
+          "label": "Image 25",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link25",
+          "label": "Link25"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_26",
+          "label": "Image 26",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link26",
+          "label": "Link26"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_27",
+          "label": "Image 27",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link27",
+          "label": "Link27"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_28",
+          "label": "Image 28",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link28",
+          "label": "Link28"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_29",
+          "label": "Image 29",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link29",
+          "label": "Link29"
+        },
+          {
+          "type": "image_picker",
+          "id": "detail_image_30",
+          "label": "Image 30",
+          "info": "760 x 500px recommended"
+        },
+        {
+          "type": "url",
+          "id": "link30",
+          "label": "Link30"
         }
       ]
     },

@@ -1,5 +1,5 @@
 {% if type == 'block' %}
-  {% assign title = block.settings.title %}
+  {% assign title = block.settings.blogtitle %}
   {% assign blog_widget_select = block.settings.blog_widget_select %}
   {% assign home_page_articles = block.settings.home_page_articles %}
   {% assign blog_tags = block.settings.blog_tags %}
@@ -8,7 +8,7 @@
   {% assign blog_comment_count = block.settings.blog_comment_count %}
   {% assign read_more_link = block.settings.read_more_link %}
 {% else %}
-  {% assign title = section.settings.title %}
+  {% assign title = section.settings.blogtitle %}
   {% assign blog_widget_select = section.settings.blog_widget_select %}
   {% assign home_page_articles = section.settings.home_page_articles %}
   {% assign blog_tags = section.settings.blog_tags %}
@@ -19,23 +19,26 @@
 {% endif %}
 
 <div class="container">
+  {% if title != blank %}
+    <div class="sixteen columns">
+      <h2 class="title blog">
+        <a href="{{ blogs[blog_widget_select].url }}">{{ title | escape }}</a>
+      </h2>
+      <div class="feature_divider"></div>
+    </div>
+  {% endif %}
   <div class="section clearfix homepage_content">
-    {% if title != blank %}
-      <div class="sixteen columns">
-        <h2 class="title center blog">
-          <a href="{{ blogs[blog_widget_select].url }}">{{ title | escape }}</a>
-        </h2>
-        <div class="feature_divider"></div>
-      </div>
-    {% endif %}
+
     {% if blog_widget_select != blank %}
       {% for article in blogs[blog_widget_select].articles limit: home_page_articles %}
-        <div class="{% if home_page_articles == 2 %}eight columns{% elsif home_page_articles == 3 %}one-third column{% else %}four columns{% endif %} article medium-down--one-whole">
-          {% if article.image %}
-            <a href="{{ article.url }}">
-              {% include 'image-element', image: article.image, alt: article.image.alt %}
-            </a>
-          {% endif %}
+        <div class="{% if home_page_articles == 2 %}eight columns{% elsif home_page_articles == 3 %}one-third column{% else %}four columns{% endif %} article medium-down--one-half">
+         {% for tag in article.tags %}
+             {% if tag contains 'cdn' %}
+               <a href="{{ article.url }}" title="{{ article.title | escape }}">
+                 <img src="{{ tag }}" alt="">
+               </a>
+             {% endif %}
+         {% endfor %}
 
           <h3 class="sub_title">
             <a href="{{ article.url }}">{{ article.title }}</a>
@@ -84,7 +87,7 @@
       {% endfor %}
     {% else %}
       {% for i in (1..home_page_articles) %}
-        <div class="{% if home_page_articles == 2 %}eight columns{% elsif home_page_articles == 3 %}one-third column medium-down--one-whole{% else %}four columns medium-down--one-half{% endif %} article small-down--one-whole">
+        <div class="{% if home_page_articles == 2 %}eight columns{% elsif home_page_articles == 3 %}one-third column medium-down--one-half{% else %}four columns medium-down--one-half{% endif %} article small-down--one-half">
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
 
           <h3 class="sub_title">

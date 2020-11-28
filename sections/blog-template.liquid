@@ -34,8 +34,11 @@
 
 <div class="container main content">
 
+
+
 {% paginate blog.articles by section.settings.blog_posts_per_page %}
   <div class="blog-header clearfix">
+
     {% unless section.settings.image != nil %}
       <div class="eight columns">
           {% if current_tags %}
@@ -55,7 +58,7 @@
       </div>
     {% endunless %}
 
-    <div class="eight columns section_select medium-down--one-whole">
+    <div class="eight columns section_select medium-down--one-half">
       {% if section.settings.blog_tags %}
           <select name="tag_filter" id="blog_filter" class="blog_filter">
             <option {% unless current_tags %}selected="selected"{% endunless %} value="{{ blog.url }}">{{ 'blogs.general.view_all' | t }}</option>
@@ -96,110 +99,119 @@
     }
   </script>
 
-
-  <div class="{% if sidebar %}twelve medium-down--one-whole {% else %}sixteen{% endif %} columns equal-columns--outside-trim equal-columns--clear">
-    {% for article in blog.articles %}
-      {% if section.settings.blog_posts_per_row == 1 %}
-        <div class="article-wrap">
+  {% include "blog-sidebar", blog_handle: blog.handle %}
 
 
-        {% if article.image %}
-          <div class="one-half columns alpha article_image medium-down--one-whole">
-            <a href="{{ article.url }}" title="{{ article.title | escape }}">
-              {% include 'image-element', image: article.image, alt: image.alt %}
-            </a>
-          </div>
-          <div class="one-half columns omega article medium-down--one-half">
-        {% else %}
-          <div class="{% if sidebar %}eight{% else %}sixteen{% endif %} columns alpha omega article">
-        {% endif %}
-      {% else %}
-      <div class="
-          {% if section.settings.blog_posts_per_row == 2 %}
-            eight columns
-          {% elsif section.settings.blog_posts_per_row == 3 %}
-            one-third column
-          {% else %}
-            four columns
-          {% endif %}
-          {% if section.settings.blog_posts_per_row == 1 %}
-            medium-down--one-whole
-          {% else %}
-            medium-down--one-half small-down--one-whole
-          {% endif %}
-          article
-        ">
+  <div class="{% if sidebar %}twelve medium-down--one-half {% else %}sixteen{% endif %} columns equal-columns--outside-trim equal-columns--clear">
 
-        {% for tag in article.tags %}
-            {% if tag contains 'cdn' %}
+    {% if section.settings.show_featured_blog %}
+      {% include 'include-featured-blog' %}
+    {% endif %}
+
+    <h2 class="title" style="margin-bottom: 20px;">{{ section.settings.blog_main_title }}</h2>
+    <div class="articles_container">
+      {% for article in blog.articles %}
+        {% if section.settings.blog_posts_per_row == 1 %}
+          <div class="article-wrap">
+
+
+          {% if article.image %}
+            <div class="one-half columns alpha article_image medium-down--one-half">
               <a href="{{ article.url }}" title="{{ article.title | escape }}">
-                <img src="{{ tag }}" alt="">
+                {% include 'image-element', image: article.image, alt: image.alt %}
               </a>
+            </div>
+            <div class="one-half columns omega article medium-down--one-half">
+          {% else %}
+            <div class="{% if sidebar %}eight{% else %}sixteen{% endif %} columns alpha omega article">
+          {% endif %}
+        {% else %}
+        <div class="
+            {% if section.settings.blog_posts_per_row == 2 %}
+              eight columns
+            {% elsif section.settings.blog_posts_per_row == 3 %}
+              one-third column
+            {% else %}
+              four columns
             {% endif %}
-        {% endfor %}
-
-
-      {% endif %}
-
-
-        <h2 class="article__title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
-
-        <p class="blog_meta">
-          {% if section.settings.blog_author %}
-            <span>{{ 'blogs.article.by_author' | t: author: article.author }}</span>
-          {% endif %}
-
-          {% if section.settings.blog_date %}
-            <span>{{ article.published_at | date: format: "month_day_year" }}</span>
-          {% endif %}
-
-          {% if section.settings.read_time %}
-            {% include 'include-read-time' %}
-          {% endif %}
-
-          {% if section.settings.blog_comment_count %}
-            {% if settings.disqus_enabled %}
-              <span>
-                <a href="{{ article.url }}#disqus_thread" data-disqus-identifier="{{ article.id }}" class="disqus-comment-count">{{ 'blogs.counts.comments_with_count' | t: count: 0 }}</a>
-              </span>
-            {% elsif article.comments_enabled? and article.comments_count > 0 %}
-              <span>
-                <a href="{{ article.url }}#comments">{{ 'blogs.counts.comments_with_count' | t: count: article.comments_count }}</a>
-              </span>
+            {% if section.settings.blog_posts_per_row == 1 %}
+              medium-down--one-half
+            {% else %}
+              medium-down--one-half small-down--one-half
             {% endif %}
+            article
+          ">
+
+          {% for tag in article.tags %}
+              {% if tag contains 'cdn' %}
+                <a href="{{ article.url }}" title="{{ article.title | escape }}">
+                  <img src="{{ tag }}" alt="">
+                </a>
+              {% endif %}
+          {% endfor %}
+
+
+        {% endif %}
+
+
+          <h2 class="article__title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
+
+          <p class="blog_meta">
+            {% if section.settings.blog_author %}
+              <span>{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+            {% endif %}
+
+            {% if section.settings.blog_date %}
+              <span>{{ article.published_at | date: format: "month_day_year" }}</span>
+            {% endif %}
+
+            {% if section.settings.read_time %}
+              {% include 'include-read-time' %}
+            {% endif %}
+
+            {% if section.settings.blog_comment_count %}
+              {% if settings.disqus_enabled %}
+                <span>
+                  <a href="{{ article.url }}#disqus_thread" data-disqus-identifier="{{ article.id }}" class="disqus-comment-count">{{ 'blogs.counts.comments_with_count' | t: count: 0 }}</a>
+                </span>
+              {% elsif article.comments_enabled? and article.comments_count > 0 %}
+                <span>
+                  <a href="{{ article.url }}#comments">{{ 'blogs.counts.comments_with_count' | t: count: article.comments_count }}</a>
+                </span>
+              {% endif %}
+            {% endif %}
+          </p>
+          {% if section.settings.blog_tags %}
+            <div class="blog_meta tags">
+              {% for tag in article.tags %}
+                <span><a href="{{ shop.url }}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" title="{{ blog.title }} {{ 'blogs.general.tagged' | t }} {{ tag | escape }}">{{ tag }}</a></span>
+              {% endfor %}
+            </div>
           {% endif %}
-        </p>
-        {% if section.settings.blog_tags %}
-          <div class="blog_meta tags">
-            {% for tag in article.tags %}
-              <span><a href="{{ shop.url }}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" title="{{ blog.title }} {{ 'blogs.general.tagged' | t }} {{ tag | escape }}">{{ tag }}</a></span>
-            {% endfor %}
+
+          {% if article.excerpt != blank %}
+            <div class="excerpt"> {{ article.excerpt }}</div>
+          {% endif %}
+          {% if section.settings.read_more_link %}
+            <a href="{{ article.url }}" title="{{ article.title | escape }}" {% if settings.read_more_style == 'button' %}class="action_button continue-button"{% endif %}>{{ 'blogs.general.continue_reading_html' | t }}</a>
+          {% endif %}
+        </div>
+        {% if section.settings.blog_posts_per_row == 2 %}
+          {% cycle "article_row": '', '<br class="clear" />' %}
+        {% elsif section.settings.blog_posts_per_row == 3 %}
+          {% cycle "article_row": '', '', '<br class="clear" />' %}
+        {% elsif section.settings.blog_posts_per_row == 4 %}
+          {% cycle "article_row": '', '', '', '<br class="clear" />' %}
+        {% else %}
+          <br class="clear" />
+        {% endif %}
+        {% if section.settings.blog_posts_per_row == 1 %}
           </div>
         {% endif %}
-
-        {% if article.excerpt != blank %}
-          <div class="excerpt"> {{ article.excerpt }}</div>
-        {% endif %}
-        {% if section.settings.read_more_link %}
-          <a href="{{ article.url }}" title="{{ article.title | escape }}" {% if settings.read_more_style == 'button' %}class="action_button continue-button"{% endif %}>{{ 'blogs.general.continue_reading_html' | t }}</a>
-        {% endif %}
-      </div>
-      {% if section.settings.blog_posts_per_row == 2 %}
-        {% cycle "article_row": '', '<br class="clear" />' %}
-      {% elsif section.settings.blog_posts_per_row == 3 %}
-        {% cycle "article_row": '', '', '<br class="clear" />' %}
-      {% elsif section.settings.blog_posts_per_row == 4 %}
-        {% cycle "article_row": '', '', '', '<br class="clear" />' %}
-      {% else %}
-        <br class="clear" />
-      {% endif %}
-      {% if section.settings.blog_posts_per_row == 1 %}
-        </div>
-      {% endif %}
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 
-  {% include "blog-sidebar", blog_handle: blog.handle %}
 
   <br class="clear" />
   <div class="sixteen columns">
@@ -217,9 +229,41 @@
   "settings": [
     {
       "type": "checkbox",
+      "id": "show_featured_blog",
+      "label": "Show featured blog",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "blogtitle",
+      "label": "Featured blog title",
+      "default": "Blog posts"
+    },
+    {
+      "type": "blog",
+      "id": "blog_widget_select",
+      "label": "Featured Blog"
+    },
+    {
+      "type": "range",
+      "id": "home_page_articles",
+      "label": "Posts",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "checkbox",
       "id": "wide_display",
       "label": "Wide display",
       "default": true
+    },
+    {
+      "type": "text",
+      "id": "blog_main_title",
+      "label": "Main blog title",
+      "default": "Les recettes de l'épicurien"
     },
     {
       "type": "image_picker",
@@ -304,9 +348,30 @@
       "id": "toggle",
       "label": "Toggle sidebar content",
       "default": false
+    },
+    {
+      "type": "text",
+      "id": "text_link1",
+      "label": "Text lien1"
+    },
+    {
+      "type": "text",
+      "id": "text_link2",
+      "label": "Text lien2"
+    },
+    {
+      "type": "url",
+      "id": "link1",
+      "label": "Lien 1"
+    },
+    {
+      "type": "url",
+      "id": "link2",
+      "label": "Lien 2"
     }
   ],
   "blocks": [
+
     {
       "type": "post_tags",
       "name": "Blog post tags",

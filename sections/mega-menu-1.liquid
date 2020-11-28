@@ -249,7 +249,7 @@
         {% endif %}
 
         {% if block.settings.image_bottom != nil or block.settings.image_caption_bottom != blank %}
-          <li class="mobile-mega-menu_block"  >
+          <li class="mobile-mega-menu_block">
             <a {% if block.settings.image_link_bottom != blank %}href="{{ block.settings.image_link_bottom }}"{% endif %} >
               {% if block.settings.image_bottom != nil %}
                 {% include 'image-element', image: block.settings.image_bottom, alt: block.settings.image_bottom.alt %}

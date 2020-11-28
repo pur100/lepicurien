@@ -14,6 +14,8 @@
 {% comment %}Featured text settings {% endcomment %}
 {% assign image = object.settings.image %}
 {% assign title = object.settings.title %}
+{% assign subtitle = object.settings.subtitle %}
+{% assign svg = object.settings.svg %}
 {% assign content = object.settings.content %}
 {% assign text_size = object.settings.text_size %}
 {% assign text_alignment = object.settings.text_alignment %}
@@ -27,15 +29,24 @@
         {% include 'image-element', image: image.src, alt: image.alt %}
       {% endif %}
 
-      {% if title != blank %}
+
       <div class="title_container">
         <div class="border_container">
           <div class="border1"></div>
           <div class="border2"></div>
         </div>
+        {% if title != blank %}
         <h2 class="rich-text__heading title title_box">
           {{ title }}
         </h2>
+        {% endif %}
+        {% if svg != blank %}
+
+        <h2 class="rich-text__heading svg title_box">
+          <img src="{{ svg }}" alt="">
+        </h2>
+        {% endif %}
+
         <div class="border_container">
           <div class="border1"></div>
           <div class="border2"></div>
@@ -43,7 +54,8 @@
       </div>
 
         <div class="feature_divider"></div>
-      {% endif %}
+
+      <h2 class="subheading">{{ subtitle }}</h2>
 
       <div class="rich-text__text {{ text_size }}">
         {% if content != blank %}

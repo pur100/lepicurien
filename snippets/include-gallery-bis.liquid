@@ -1,0 +1,626 @@
+<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+<script src="/path/to/flickity.pkgd.min.js"></script>
+
+<div class="container full-width--{{ block.settings.wide_display }}">
+  <div class="title_container">
+    <div class="border_container">
+      <div class="border1"></div>
+      <div class="border2"></div>
+    </div>
+    {% if block.settings.title != blank %}
+    <h2 class="rich-text__heading title title_box">
+      {{ block.settings.title }}
+    </h2>
+    {% endif %}
+    {% if svg != blank %}
+    <h2 class="rich-text__heading svg title_box">
+      {{ svg }}
+    </h2>
+    {% endif %}
+
+    <div class="border_container">
+      <div class="border1"></div>
+      <div class="border2"></div>
+    </div>
+  </div>
+  <div class="desktop">
+    <div class="row1" style="display:flex; justify-content: space-around;">
+      <div class="thumbnail gallery-image-wrapper">
+          {% if block.settings.detail_image_1 %}
+            <div class="gallery-cell">
+              <a  href="{{ block.settings.link1  }}">
+                {% include 'image-element', image: block.settings.detail_image_1, alt: block.settings.detail_image_1.alt %}
+              </a>
+            </div>
+
+
+          {% endif %}
+        </div>
+        <div class="thumbnail gallery-image-wrapper">
+            {% if block.settings.detail_image_2 %}
+              <div class="gallery-cell">
+                <a  href="{{ block.settings.link2  }}">
+                  {% include 'image-element', image: block.settings.detail_image_2, alt: block.settings.detail_image_2.alt %}
+                </a>
+              </div>
+
+            {% endif %}
+          </div>
+            <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_3 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link3  }}">
+              {% include 'image-element', image: block.settings.detail_image_3, alt: block.settings.detail_image_3.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_4 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link4  }}">
+              {% include 'image-element', image: block.settings.detail_image_4, alt: block.settings.detail_image_4.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_5 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link5  }}">
+              {% include 'image-element', image: block.settings.detail_image_5, alt: block.settings.detail_image_5.alt %}
+            </a>
+          </div>
+
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_6 %}
+          <div class="gallery-cell">
+           <a  href="{{ block.settings.link6  }}">
+              {% include 'image-element', image: block.settings.detail_image_6, alt: block.settings.detail_image_6.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+    </div>
+      <div class="row2" style="display:flex; justify-content: space-around;">
+       <div class="thumbnail gallery-image-wrapper">
+          {% if block.settings.detail_image_7 %}
+            <div class="gallery-cell">
+              <a  href="{{ block.settings.link7  }}">
+                {% include 'image-element', image: block.settings.detail_image_7, alt: block.settings.detail_image_7.alt %}
+              </a>
+            </div>
+
+          {% endif %}
+        </div>
+        <div class="thumbnail gallery-image-wrapper">
+            {% if block.settings.detail_image_8 %}
+              <div class="gallery-cell">
+               <a  href="{{ block.settings.link8  }}">
+                  {% include 'image-element', image: block.settings.detail_image_8, alt: block.settings.detail_image_8.alt %}
+                </a>
+              </div>
+
+            {% endif %}
+          </div>
+            <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_9 %}
+          <div class="gallery-cell">
+           <a  href="{{ block.settings.link9  }}">
+              {% include 'image-element', image: block.settings.detail_image_9, alt: block.settings.detail_image_9.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_10 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link10  }}">
+              {% include 'image-element', image: block.settings.detail_image_10, alt: block.settings.detail_image_10.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_11 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link11  }}">
+              {% include 'image-element', image: block.settings.detail_image_11, alt: block.settings.detail_image_11.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_12 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link12  }}">
+              {% include 'image-element', image: block.settings.detail_image_12, alt: block.settings.detail_image_12.alt %}
+            </a>
+          </div>
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+    </div>
+
+      <div class="row3" style="display:flex; justify-content: space-around;">
+      <div class="thumbnail gallery-image-wrapper">
+          {% if block.settings.detail_image_13 %}
+            <div class="gallery-cell">
+              <a  href="{{ block.settings.link13  }}">
+                {% include 'image-element', image: block.settings.detail_image_13, alt: block.settings.detail_image_13.alt %}
+              </a>
+            </div>
+
+          {% endif %}
+        </div>
+        <div class="thumbnail gallery-image-wrapper">
+            {% if block.settings.detail_image_14 %}
+              <div class="gallery-cell">
+               <a  href="{{ block.settings.link14  }}">
+                  {% include 'image-element', image: block.settings.detail_image_14, alt: block.settings.detail_image_14.alt %}
+                </a>
+              </div>
+
+            {% endif %}
+          </div>
+            <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_15 %}
+          <div class="gallery-cell">
+           <a  href="{{ block.settings.link15  }}">
+              {% include 'image-element', image: block.settings.detail_image_15, alt: block.settings.detail_image_15.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_16 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link16  }}">
+              {% include 'image-element', image: block.settings.detail_image_16, alt: block.settings.detail_image_16.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_17 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link17  }}">
+              {% include 'image-element', image: block.settings.detail_image_17, alt: block.settings.detail_image_17.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_18 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link18  }}">
+              {% include 'image-element', image: block.settings.detail_image_18, alt: block.settings.detail_image_18.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="row4" style="display:flex; justify-content: space-around;">
+      <div class="thumbnail gallery-image-wrapper">
+          {% if block.settings.detail_image_19 %}
+            <div class="gallery-cell">
+              <a  href="{{ block.settings.link19  }}">
+                {% include 'image-element', image: block.settings.detail_image_19, alt: block.settings.detail_image_19.alt %}
+              </a>
+            </div>
+
+          {% endif %}
+        </div>
+        <div class="thumbnail gallery-image-wrapper">
+            {% if block.settings.detail_image_20 %}
+              <div class="gallery-cell">
+               <a  href="{{ block.settings.link20  }}">
+                  {% include 'image-element', image: block.settings.detail_image_20, alt: block.settings.detail_image_20.alt %}
+                </a>
+              </div>
+
+            {% endif %}
+          </div>
+            <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_21 %}
+          <div class="gallery-cell">
+           <a  href="{{ block.settings.link21  }}">
+              {% include 'image-element', image: block.settings.detail_image_21, alt: block.settings.detail_image_21.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_22 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link22  }}">
+              {% include 'image-element', image: block.settings.detail_image_22, alt: block.settings.detail_image_22.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_23 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link23  }}">
+              {% include 'image-element', image: block.settings.detail_image_23, alt: block.settings.detail_image_23.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_24 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link24  }}">
+              {% include 'image-element', image: block.settings.detail_image_24, alt: block.settings.detail_image_24.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="row5" style="display:flex; justify-content: space-around;">
+      <div class="thumbnail gallery-image-wrapper">
+          {% if block.settings.detail_image_25 %}
+            <div class="gallery-cell">
+              <a  href="{{ block.settings.link25  }}">
+                {% include 'image-element', image: block.settings.detail_image_25, alt: block.settings.detail_image_25.alt %}
+              </a>
+            </div>
+
+          {% endif %}
+        </div>
+        <div class="thumbnail gallery-image-wrapper">
+            {% if block.settings.detail_image_26 %}
+              <div class="gallery-cell">
+               <a  href="{{ block.settings.link26  }}">
+                  {% include 'image-element', image: block.settings.detail_image_26, alt: block.settings.detail_image_26.alt %}
+                </a>
+              </div>
+
+            {% endif %}
+          </div>
+            <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_27 %}
+          <div class="gallery-cell">
+           <a  href="{{ block.settings.link27  }}">
+              {% include 'image-element', image: block.settings.detail_image_27, alt: block.settings.detail_image_27.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_28 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link28  }}">
+              {% include 'image-element', image: block.settings.detail_image_28, alt: block.settings.detail_image_28.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_29 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link29  }}">
+              {% include 'image-element', image: block.settings.detail_image_29, alt: block.settings.detail_image_29.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+        <div class="thumbnail gallery-image-wrapper">
+        {% if block.settings.detail_image_30 %}
+          <div class="gallery-cell">
+            <a  href="{{ block.settings.link30  }}">
+              {% include 'image-element', image: block.settings.detail_image_30, alt: block.settings.detail_image_30.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+<div class="main-carousel mobile" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        {% if block.settings.detail_image_1 %}
+          <div class="carousel-cell">
+            <a  href="{{ block.settings.link1  }}">
+              {% include 'image-element', image: block.settings.detail_image_1, alt: block.settings.detail_image_1.alt %}
+            </a>
+          </div>
+
+        {% endif %}
+
+  {% if block.settings.detail_image_2 %}
+             <div class="carousel-cell">
+              <a  href="{{ block.settings.link2  }}">
+                 {% include 'image-element', image: block.settings.detail_image_2, alt: block.settings.detail_image_2.alt %}
+               </a>
+             </div>
+
+           {% endif %}
+
+           {% if block.settings.detail_image_3 %}
+                      <div class="carousel-cell">
+                       <a  href="{{ block.settings.link3  }}">
+                          {% include 'image-element', image: block.settings.detail_image_3, alt: block.settings.detail_image_3.alt %}
+                        </a>
+                      </div>
+
+                    {% endif %}
+
+          {% if block.settings.detail_image_4 %}
+                     <div class="carousel-cell">
+                       <a  href="{{ block.settings.link4  }}">
+                         {% include 'image-element', image: block.settings.detail_image_4, alt: block.settings.detail_image_4.alt %}
+                       </a>
+                     </div>
+
+                   {% endif %}
+
+        {% if block.settings.detail_image_5 %}
+                   <div class="carousel-cell">
+                    <a  href="{{ block.settings.link5  }}">
+                       {% include 'image-element', image: block.settings.detail_image_5, alt: block.settings.detail_image_5.alt %}
+                     </a>
+                   </div>
+
+                 {% endif %}
+
+        {% if block.settings.detail_image_6 %}
+                   <div class="carousel-cell">
+                    <a  href="{{ block.settings.link6  }}">
+                       {% include 'image-element', image: block.settings.detail_image_6, alt: block.settings.detail_image_6.alt %}
+                     </a>
+                   </div>
+
+                 {% endif %}
+
+          {% if block.settings.detail_image_7 %}
+                     <div class="carousel-cell">
+                      <a  href="{{ block.settings.link7  }}">
+                         {% include 'image-element', image: block.settings.detail_image_7, alt: block.settings.detail_image_7.alt %}
+                       </a>
+                     </div>
+
+                   {% endif %}
+
+          {% if block.settings.detail_image_8 %}
+                     <div class="carousel-cell">
+                      <a  href="{{ block.settings.link8  }}">
+                         {% include 'image-element', image: block.settings.detail_image_8, alt: block.settings.detail_image_8.alt %}
+                       </a>
+                     </div>
+
+                   {% endif %}
+
+          {% if block.settings.detail_image_9 %}
+                     <div class="carousel-cell">
+                      <a  href="{{ block.settings.link9  }}">
+                         {% include 'image-element', image: block.settings.detail_image_9, alt: block.settings.detail_image_9.alt %}
+                       </a>
+                     </div>
+
+                   {% endif %}
+
+          {% if block.settings.detail_image_10 %}
+                     <div class="carousel-cell">
+                      <a  href="{{ block.settings.link10  }}">
+                         {% include 'image-element', image: block.settings.detail_image_10, alt: block.settings.detail_image_10.alt %}
+                       </a>
+                     </div>
+
+                   {% endif %}
+
+            {% if block.settings.detail_image_11 %}
+                       <div class="carousel-cell">
+                        <a  href="{{ block.settings.link11  }}">
+                           {% include 'image-element', image: block.settings.detail_image_11, alt: block.settings.detail_image_11.alt %}
+                         </a>
+                       </div>
+
+                     {% endif %}
+
+              {% if block.settings.detail_image_12 %}
+                         <div class="carousel-cell">
+                          <a  href="{{ block.settings.link12  }}">
+                             {% include 'image-element', image: block.settings.detail_image_12, alt: block.settings.detail_image_12.alt %}
+                           </a>
+                         </div>
+
+                       {% endif %}
+
+              {% if block.settings.detail_image_13 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link13  }}">
+                    {% include 'image-element', image: block.settings.detail_image_13, alt: block.settings.detail_image_13.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_14 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link14  }}">
+                    {% include 'image-element', image: block.settings.detail_image_14, alt: block.settings.detail_image_14.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_15 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link15  }}">
+                    {% include 'image-element', image: block.settings.detail_image_15, alt: block.settings.detail_image_15.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_16 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link16  }}">
+                    {% include 'image-element', image: block.settings.detail_image_16, alt: block.settings.detail_image_16.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_17 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link17  }}">
+                    {% include 'image-element', image: block.settings.detail_image_17, alt: block.settings.detail_image_17.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_18 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link18  }}">
+                    {% include 'image-element', image: block.settings.detail_image_18, alt: block.settings.detail_image_18.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_19 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link19  }}">
+                    {% include 'image-element', image: block.settings.detail_image_19, alt: block.settings.detail_image_19.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_20 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link20  }}">
+                    {% include 'image-element', image: block.settings.detail_image_20, alt: block.settings.detail_image_20.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_21 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link21  }}">
+                    {% include 'image-element', image: block.settings.detail_image_21, alt: block.settings.detail_image_21.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_22 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link22  }}">
+                    {% include 'image-element', image: block.settings.detail_image_22, alt: block.settings.detail_image_22.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_23 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link23  }}">
+                    {% include 'image-element', image: block.settings.detail_image_23, alt: block.settings.detail_image_23.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_24 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link24  }}">
+                    {% include 'image-element', image: block.settings.detail_image_24, alt: block.settings.detail_image_24.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_25 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link25  }}">
+                    {% include 'image-element', image: block.settings.detail_image_25, alt: block.settings.detail_image_25.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_26 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link26  }}">
+                    {% include 'image-element', image: block.settings.detail_image_26, alt: block.settings.detail_image_26.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_27 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link27  }}">
+                    {% include 'image-element', image: block.settings.detail_image_27, alt: block.settings.detail_image_27.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_28 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link28  }}">
+                    {% include 'image-element', image: block.settings.detail_image_28, alt: block.settings.detail_image_28.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_29 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link29  }}">
+                    {% include 'image-element', image: block.settings.detail_image_29, alt: block.settings.detail_image_29.alt %}
+                  </a>
+                </div>
+              {% endif %}
+
+              {% if block.settings.detail_image_30 %}
+                <div class="carousel-cell">
+                  <a  href="{{ block.settings.link30  }}">
+                    {% include 'image-element', image: block.settings.detail_image_30, alt: block.settings.detail_image_30.alt %}
+                  </a>
+                </div>
+              {% endif %}
+         </div>
+
+
+
+<style>
+  .main-carousel {
+    margin-top: 50px;
+  }
+
+  .carousel-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+  .flickity-button, .flickity-page-dots {
+    display:none;
+  }
+
+</style>
+
+
+
+

@@ -11,7 +11,7 @@
   <header class="banner center page-banner dark-overlay-{{ section.settings.image_darken }}">
     {% include 'image-element', image: section.settings.image, alt: section.settings.image.alt, stretch_width: true %}
     <div class="caption captionOverlay--true">
-      <h1 class="headline">{{ 'general.search.title' | t }}</h1>
+      <h1 class="headline" style="font-size: 40px !important">{{ 'general.search.title' | t }}</h1>
     </div>
   </header>
 {% endif %}
@@ -67,7 +67,7 @@
   {% if section.settings.image == blank %}
     <div class="section clearfix">
       <div class="sixteen columns clearfix">
-        <h1>{{ 'general.search.title' | t }}</h1>
+        <h1 style="font-size: 40px !important">{{ 'general.search.title' | t }}</h1>
         <div class="feature_divider"></div>
       </div>
     </div>
@@ -160,9 +160,14 @@
                 </div>
               {% endif %}
 
+              <!-- BLOG IMAGE SEARCH RECHERCHE-->
+
+
               {% if item.object_type == 'article' %}
                 <p class="blog_meta">
-                  {% if section.settings.blog_author %}
+                  <a class="blog_img_link" href="{{ item.url }}" title="{{ item.title | escape }}">
+                      {% include 'image-element', image: item.image, alt: item.title, object_fit: settings.align_height, max_height: settings.collection_height %}
+                  </a>                   {% if section.settings.blog_author %}
                     <span>{{ 'blogs.article.by_author' | t: author: item.author }}</span>
                   {% endif %}
 
@@ -228,6 +233,15 @@
   {% endpaginate %}
 </div>
 
+
+<style>
+  .blog_img_link > img {
+    width: calc(25% - 20px) !important;
+    min-height: 250px;
+    object-fit: cover;
+    margin-left: 0 !important;
+  }
+</style>
 
 {% schema %}
 

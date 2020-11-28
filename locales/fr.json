@@ -18,10 +18,10 @@
       "login_form_password_placeholder": "Votre mot de passe",
       "login_form_submit": "Entrer",
       "signup_form_submit": "Soumettre",
-      "signup_form_success": "Nous vous enverrons un e-mail à droite avant d'ouvrir!",
-      "admin_link_html": "Êtes-vous le propriétaire de la boutique? <a href=\"\/admin\" class=\"text-link\">Connectez-vous ici<\/a>.",
+      "signup_form_success": "Nous vous enverrons un e-mail juste avant d'ouvrir!",
+      "admin_link_html": "Êtes-vous le propriétaire de la boutique ? <a href=\"\/admin\" class=\"text-link\">Connectez-vous ici<\/a>.",
       "password_link": "Entrer avec un mot de passe",
-      "powered_by_shopify_html": "Cette boutique sera propulsée <a href=\"https:\/\/www.shopify.com\/&ref=out-of-the-sandbox\" target=\"_blank\" rel=\"nofollow\">Shopify<\/a>"
+      "powered_by_shopify_html": "Cette boutique sera lancée par <a href=\"https:\/\/www.shopify.com\/&ref=out-of-the-sandbox\" target=\"_blank\" rel=\"nofollow\">Shopify<\/a>"
     },
     "meta": {
       "tagged_html": "Étiqueté \"{{ tags }}\"",
@@ -33,12 +33,12 @@
     },
     "newsletter_form": {
       "title": "Nouveautés et mises à jour",
-      "description": "Inscrivez-vous pour être informé(e) des soldes, des nouveautés et d'autres évènements",
+      "description": "Inscrivez-vous pour être informé(e) des offres, des nouveautés et d'autres événements",
       "name": "Nom",
       "email": "E-mail",
       "subscriber_first_name": "Prénom",
       "subscriber_last_name": "Nom",
-      "success_text": "Merci de vous être inscrit(e) à notre liste de diffusion !",
+      "success_text": "Bienvenue dans notre communauté d’Épicuriens !",
       "placeholder": "Saisissez votre adresse e-mail...",
       "submit": "S'inscrire"
     },
@@ -47,7 +47,7 @@
       "page": "Page {{ current_page }} de {{ pages }}"
     },
     "search": {
-      "title": "Recherche",
+      "title": "Une envie ?",
       "description": "Recherchez un produit dans notre boutique",
       "no_results_html": "Votre recherche de \"{{ terms }}\" n'a donné aucun résultat.",
       "advanced_search_html": "Recherche avancée →",
@@ -78,14 +78,15 @@
     },
     "article": {
       "posted_in_html": "{{ tags }}",
-      "additional_articles": "Voir l'article entier",
+      "additional_articles": "Autres idées de recettes",
       "author_on_date_html": "Publié le {{ date }} par {{ author }}",
       "by_author": "par {{ author }}",
       "previous_article_html": "← Précédent",
       "next_article_html": "Suivant →",
       "tags": "Labels",
       "author": "Auteur",
-      "comment_meta_html": "<strong>{{ author }}<\/strong> le <strong><time datetime=\"{{ date }}\">{{ date }}<\/time><\/strong>"
+      "comment_meta_html": "<strong>{{ author }}<\/strong> le <strong><time datetime=\"{{ date }}\">{{ date }}<\/time><\/strong>",
+      "read_time": "min à lire"
     },
     "counts": {
       "comments_with_count": {
@@ -137,7 +138,7 @@
       "filter": "Filter by",
       "filter_collection": "Filtrer {{ title }}",
       "featured": "Coups de cœur",
-      "best_selling": "Meilleurs ventes",
+      "best_selling": "Meilleures ventes",
       "az": "Par ordre alphabétique : A-Z",
       "za": "Par ordre alphabétique : Z-A",
       "price_ascending": "Par prix : du moins cher au plus cher",
@@ -189,7 +190,7 @@
       "phone": "Numéro de téléphone",
       "message": "Message",
       "send": "Envoyer",
-      "post_success": "Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais."
+      "post_success": "Merci ! Votre message a bien été envoyé."
     }
   },
   "customer": {
@@ -352,10 +353,10 @@
       "item": "Article",
       "uploaded_file": "fichier téléchargé",
       "continue_browsing_html": "Votre panier ne contient aucun article.",
-      "continue_shopping_link_html": "Poursuivre vos achats→",
+      "continue_shopping_link_html": "Poursuivez vos achats→",
       "excluding_tax_shipping": "Taxe et frais de livraison non compris",
       "orders_processed_in_currency_html": "Les commandes seront facturées en {{ currency }}.",
-      "note": "Commentaire",
+      "note": "C'est un cadeau ? Laissez un petit mot ",
       "agree_to_terms_html": "Je suis d'accord avec les Conditions",
       "view_terms": "[Voir les termes]",
       "agree_to_terms_warning": "Vous devez accepter les termes et conditions à la caisse.",
@@ -363,7 +364,8 @@
       "subtotal": "Sous-total",
       "discount": "Remise",
       "update": "Mettre à jour le sous-total",
-      "checkout": "Paiement"
+      "checkout": "Paiement",
+      "maximum_quantity": "quantité maximum"
     },
     "shipping_calculator": {
       "estimated_shipping": "estimation des frais de livraison",
@@ -387,7 +389,7 @@
       "cart": "Panier",
       "edit_cart": "Modifier le panier",
       "go_to_cart": "Aller au panier",
-      "checkout": "Paiement",
+      "checkout": "Achat rapide",
       "continue_shopping": "Continuer les achats",
       "cart_note": "Commentaire",
       "empty_cart": "Votre panier est vide",
@@ -424,6 +426,98 @@
       "items_with_count": {
         "one": "{{ count }} article",
         "other": "{{ count }} articles"
+      }
+    }
+  },
+  "socialshopwave": {
+    "log_in": "Log in",
+    "log_in_to_account": "Log in to your account",
+    "cancel": "cancel",
+    "create_account": "Create Account",
+    "sign_up": "Sign up",
+    "not_created_customer_on_shopify": "Not created customer on Shopify",
+    "create_your_account": "Create your account",
+    "my_orders": "My Orders",
+    "logout": "Logout",
+    "faved": "in wishlist",
+    "fave": "Add to wishlist",
+    "unfave": "Remove from Wishlist",
+    "fave_choose_variant": "Choose options",
+    "fave_edit_variant": "Choose options",
+    "add_to_cart": "Add To Cart",
+    "share": "Share",
+    "sharing": "Posting...",
+    "write_a_review": "Write a review",
+    "quantity_review2": "{{ ssw_count_rate }} Review",
+    "quantity_reviews2": "{{ ssw_count_rate }} Reviews",
+    "quantity_review": "{{ ssw_count_rate }} review",
+    "quantity_reviews": "{{ ssw_count_rate }} reviews",
+    "view_cart": "View Cart",
+    "my_faves": "My Wishlist",
+    "close": "Close",
+    "user_commented_product_html": "{{ user_link }} commented {{ product_link }}",
+    "user_faved_product_html": "{{ user_link }} added {{ product_link }} to wishlist",
+    "user_reviewed_product_html": "{{ user_link }} reviewed {{ product_link }}",
+    "adding_to_cart": "Adding...",
+    "sold_out": "Sold Out",
+    "ask_your_friends": "Ask Advice",
+    "description": "Description",
+    "reviews": "Reviews",
+    "comments": "Comments",
+    "view_profile": "View Profile",
+    "invite_friends": "Invite Friends",
+    "edit_profile": "Edit Profile",
+    "sign_in_facebook": "Continue with Facebook",
+    "social_login_facebook": "Continue with Facebook",
+    "sign_in_twitter": "Sign-in with Twitter",
+    "social_login_twitter": "Twitter",
+    "sign_in_gplus": "Google",
+    "social_login_gplus": "Google",
+    "sign_in_yahoo": "Sign-in with Yahoo",
+    "social_login_yahoo": "Yahoo",
+    "sign_in_tumblr": "Sign-in with Tumblr",
+    "social_login_tumblr": "Tumblr",
+    "sign_in_instagram": "Sign-in with Instagram",
+    "social_login_instagram": "Instagram",
+    "sign_in_amazon": "Sign-in with Amazon",
+    "social_login_amazon": "Amazon",
+    "social_login_simple": "Email",
+    "ask_question": "Ask a question",
+    "quantity_question": "{{ ssw_question_count }} answered question",
+    "quantity_questions": "{{ ssw_question_count }} answered questions",
+    "email_address": "Email address",
+    "password": "Password",
+    "forgot_password": "Forgot password?",
+    "give_a_title_for_review": "Give a title for review",
+    "leaving_review": "Posting...",
+    "leave_review": "Post",
+    "share_button": "Post"
+  },
+  "shopify": {
+    "page_titles": {
+      "search": "Une envie ?"
+    },
+    "checkout": {
+      "processing": {
+        "continue_to_payment_gateway_button_label": "Continuez vers le paiement",
+        "complete_your_purchase_title_error": "Corrigez vos données de paiement",
+        "continue_to_payment_gateway_button_label_error": "Mettez à jour les informations de paiement"
+      },
+      "review": {
+        "blocks": {
+          "change_payment_method_link_label": "Modifiez le mode de paiement",
+          "payment_method_title": "Achat rapide"
+        }
+      },
+      "general": {
+        "complete_purchase_button_label": "Validez le paiement",
+        "authenticate_purchase_button_label": "Authentifiez le paiement"
+      },
+      "delivery_options": {
+        "ship": "Expédier"
+      },
+      "thank_you": {
+        "company_tracking_number": "numéro de suivi par le transporteur : {{ company }}. (Si \"autre\", votre colis est envoyé via GEFCO) :"
       }
     }
   }

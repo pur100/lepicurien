@@ -167,6 +167,8 @@
       <div class="sixteen columns list-collection-wrapper">
     {% endif %}
 
+    <h2>{{ section.settings.title }}</h2>
+
       {% if collection.description != blank %}
         <div class="section clearfix collection_description">
           {{ collection.description }}
@@ -210,6 +212,12 @@
     {
       "type": "header",
       "content": "Banner"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "les recettes des épicuriens"
     },
     {
       "type": "checkbox",

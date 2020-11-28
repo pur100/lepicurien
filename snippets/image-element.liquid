@@ -75,7 +75,7 @@ max_height: <number>
 
 {% if back_to_basics %}
   <div class="image-element__wrap" style="{{ background_color }}{{ crop_to_aspect_ratio }};">
-      <img  alt="{{ alt | escape }}" src="{{ image | img_url: '2000x' }}"
+      <img  class="imageX" alt="{{ alt | escape }}" src="{{ image | img_url: '2000x' }}"
             {% if inline_style %}
               style="{{ inline_style }}"
             {% endif %}

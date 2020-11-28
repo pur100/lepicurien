@@ -151,15 +151,16 @@
         {% endif %}
       {% endfor %}
 
-      <div class="sixteen columns row footer_credits">
+ <!--end footer_credits-->
+    </div>
+         <div class="sixteen columns row footer_credits">
         <p class="credits">
-          &copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: '/' }}.
+          <a href="https://lobstter.com">  Site réalisé par lobsTTer</a> &copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: '/' }}.
           {{ section.settings.copyright_text }}
           {% if section.settings.display_designed_by %}
             {{ 'layout.general.designer_credits_html' | t }}
           {% endif %}
-          {{ powered_by_link | split: '" ' | join: '&ref=out-of-the-sandbox" ' | split: '">' | join: '&ref=out-of-the-sandbox">' }}
-        </p>
+                </p>
 
         {% if section.settings.display_payment_methods %}
           <div class="payment_methods">
@@ -168,8 +169,7 @@
             {% endfor %}
           </div>
         {% endif %}
-      </div><!--end footer_credits-->
-    </div>
+      </div>
   </div>
 </footer>
 

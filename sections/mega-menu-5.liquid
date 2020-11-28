@@ -21,7 +21,7 @@
 
               {% comment %}Image with caption and link{% endcomment %}
               {% if block.settings.image_top != nil or block.settings.image_caption_top != blank %}
-                <div class="mega-menu__image-caption-link">
+                <div class="mega-menu__image-caption-link" >
                   <a {% if block.settings.image_link_top != blank %}href="{{ block.settings.image_link_top }}"{% endif %} >
                     {% if block.settings.image_top != nil %}
                       {% include 'image-element', image: block.settings.image_top, alt: block.settings.image_top.alt %}

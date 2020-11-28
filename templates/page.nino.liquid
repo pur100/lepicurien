@@ -1,0 +1,68 @@
+
+{% section 'page-details-template-nino' %}
+
+
+{% section 'nino_btns' %}
+
+{% section 'gallery_nino_1' %}
+{% section 'gallery_nino_2' %}
+
+<div class="nino_contact" style="position: relative;">
+  <div class="nino_contact_text">
+    <p>Vous souhaitez plus d’info ?<br>
+       Contactez-moi au 04.67.88.90.00 ou laissez-moi un message :
+    </p>
+  </div>
+  <div class="form_wrap">
+    <div class="form_left">
+      <img class="nino_round_form" src="https://cdn.shopify.com/s/files/1/0300/2030/5034/files/20191120_NINO_CAPSULE-NEUTRE.png?v=1592825086" alt="">
+    </div>
+    <div class="form_right">
+
+      {% include 'include-contact-form' %}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="nino_bye"><img class="banner_img"src="https://cdn.shopify.com/s/files/1/0300/2030/5034/files/A-bientot-Nino.png?v=1592828678" alt="">
+  </div>
+</div>
+
+<style>
+
+  #shopify-section-header, #shopify-section-footer, #shopify-section-newsletter, .full_border1, .full_border2, #shopify-section-logo-bar, .main_nav_wrapper {
+    display: none !important;
+  }
+
+  .form_right {
+    width: 100%;
+  }
+
+  .form_wrap {
+    display: flex;
+  }
+
+  .nino_round_form {
+    padding-top: 40px;
+    width: 60%;
+  }
+
+  .nino_contact {
+    padding: 40px;
+  }
+
+  .border_container {
+    display: none;
+  }
+
+  .nino_contact_text > p {
+    font-family: "kauf" !important;
+    text-align: right;
+    font-size: 28px !important;
+  }
+
+  .equal-columns--outside-trim {
+    width: 100% !important;
+  }
+</style>

@@ -138,7 +138,7 @@
           {% if section.settings.product_description_position == "top" %}
             {% if product.description != blank %}
               <div class="description">
-                {{ product.description | split: '<!-- split -->' | first }}
+                {% if product.description contains '<!-- split -->' %}{{ product.description | split: '<!-- split -->' | first  }}{% else %}{% include 'product-description-tabs' %}{% endif %}
               </div>
             {% endif %}
           {% endif %}
@@ -151,7 +151,7 @@
           {% if section.settings.product_description_position == "bottom" %}
             {% if product.description != blank %}
               <div class="description bottom">
-                {{ product.description | split: '<!-- split -->' | first }}
+                {% if product.description contains '<!-- split -->' %}{{ product.description | split: '<!-- split -->' | first  }}{% else %}{% include 'product-description-tabs' %}{% endif %}
               </div>
             {% endif %}
           {% endif %}
@@ -212,7 +212,7 @@
         <br class="clear" />
         <div class="section clearfix">
           <div class="description">
-            {{ product.description | split: '<!-- split -->' | last }}
+            {% capture desctabs %}{{ product.description | split: '<!-- split -->' | last  }}{% endcapture %}{% include 'product-description-tabs' with desctabs %}
           </div>
         </div>
       {% endif %}

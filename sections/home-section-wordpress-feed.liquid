@@ -1,0 +1,364 @@
+<style>
+  #swpf-feed {
+    border-bottom: 1px solid {{ section.settings.swpf_border_color}};
+    border-top: 1px solid {{ section.settings.swpf_border_color}};
+    background: {{ section.settings.swpf_background_color }};
+    padding:{{ section.settings.swpf_padding_y}}px 0;
+
+     }
+
+
+      .swpf-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+
+          .swpf-skeleton {
+    background-color: #dfe3e8;
+    animation: swpf-SkeletonAnimation 0.8s linear infinite alternate;
+  }
+
+
+
+        .swpf_container {
+    max-width: {{ section.settings.swpf_container_width }};
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+    .swpf_container_full {
+    width: 100%;  
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+    .swpf_section-heading {
+    padding: 10px 15px;
+  }
+
+    @keyframes swpf-SkeletonAnimation {
+    0% {
+      opacity: 0.45;
+    }
+
+      100% {
+      opacity: 0.9;
+    }
+  }
+
+    .swpf-box {
+    position: relative;
+    background: #eaeaea;
+    border: 1px solid rgba(109, 109, 109, 0.2);
+  }
+
+    .swpf-box {
+    flex: 1 0 calc(25% - 10px);
+    line-height: 1.1;
+    margin:  {{ section.settings.swpf_margin }}px;
+  }
+
+
+
+        .swpf-box:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+    .swpf-box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+
+      .swpf-content {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: {{ section.settings.swpf_overlay | color_modify: 'alpha', section.settings.swpf_overlay_opacity }};
+    padding: 5px;
+    color: #fff;
+  }
+
+    .swpf_box_text {
+    font-weight: {{ section.settings.swpf_font_weight}};
+    font-size: {{ section.settings.swpf_font_size}}px;
+    color: {{ section.settings.swpf_front_color}};
+    padding-bottom: 10px;
+  }
+
+    .text-center {
+    text-align: center;
+  }
+
+
+
+        @media screen and (max-width: 750px) {
+    .swpf-box {
+    flex: 1 0 calc(50% - 10px);
+    }
+    .swpf_box_text {
+      font-size: {{ section.settings.swpf_font_size_sm}}px;
+      padding-bottom: 5px;
+    }
+
+      .swpf_container {
+      padding-right: 10px;
+      padding-left: 10px;
+      }
+      .swpf_container_full {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+
+      }
+
+
+
+      </style>
+
+
+
+  {% for block in section.blocks %}
+  {% if block.type == 'html' %}
+  <style>
+  {{block.settings.swpf_css}}
+  </style>
+  {% endif %} {% endfor %}
+
+<div class="section feed" id="swpf-feed" data-wp="{{ section.settings.swpf_wp_hosted }}" data-generate-images="{{section.settings.swpf_generate_images}}" data-url="{{ section.settings.swpf_url }}"
+  data-posts="{{ section.settings.number_posts }}" data-author="" data-category="{{ section.settings.swpf_category }}" data-target="{{section.settings.swpf_target }}">
+
+
+  {% for block in section.blocks %}
+
+  {% if block.type == 'html' %}
+  {{block.settings.swpf_html}}
+  {% endif %}
+
+
+  {% if block.type == 'text' %}
+  <header class="swpf_section-heading  text-center block-heading">
+    <div class="swpf-head">
+      <h2 class="swpf-title text-center">
+        {{block.settings.swpf_title | escape}}
+      </h2>
+    </div>
+    <div class="block-sswpf_subtitle">
+      <p class="swpf_subtitle">
+        {{block.settings.swpf_subtitle | escape}}
+      </p>
+    </div>
+  </header>
+  {% endif %}
+  {% endfor %}
+
+  <div class="{% if section.settings.swpf_checkbox %}swpf_container_full{% else %}swpf_container{% endif %}">
+    <div class="swpf-container" id="wpsContent"></div>
+  </div>
+  </section>
+
+  {% schema %}
+
+  {
+      "name": "Wordpress Post Feed",
+      "class": "index-section wp-feed",
+      "tag": "section",
+      "presets": [
+          {
+              "name": "Simple Wordpress Post Feed",
+              "category": "Custom Content"
+          }
+      ],
+      "blocks": [
+          {
+              "type": "text",
+              "name": "Title & Subtitle",
+              "limit": 1,
+              "settings": [
+                  {
+                      "type": "text",
+                      "id": "swpf_title",
+                      "label": "Section Title",
+                      "placeholder": "your title.."
+                  },
+                  {
+                      "type": "text",
+                      "id": "swpf_subtitle",
+                      "label": "Section Subtitle",
+                      "placeholder": "your subtitle.."
+                  }
+              ]
+          },
+          {
+              "type": "html",
+              "name": "Html / Css",
+              "limit": 1,
+              "settings": [
+                  {
+                      "type": "html",
+                      "id": "swpf_html",
+                      "label": "Own html",
+                      "placeholder": "Add your own html code here for title / subtitle etc"
+                  },
+                  {
+                      "type": "html",
+                      "id": "swpf_css",
+                      "label": "Own css",
+                      "placeholder": "Add your css code to override app defaults"
+                  }
+              ]
+          }
+      ],
+      "settings": [
+          {
+              "type": "text",
+              "id": "swpf_url",
+              "label": "Wordpress url",
+              "default": "https://stackedboost.com",
+              "placeholder": "url to your wordpress"
+          },
+          {
+              "type": "checkbox",
+              "id": "swpf_wp_hosted",
+              "default": false,
+              "label": "Hosted on wordpress.com"
+          },
+          {
+              "type": "range",
+              "id": "number_posts",
+              "min": 1,
+              "max": 100,
+              "step": 1,
+              "label": "Number of posts to display",
+              "default": 3
+          },
+          {
+              "type": "text",
+              "id": "swpf_category",
+              "label": "Limit to category",
+              "placeholder": "Category ID (number)"
+          },
+          {
+              "type": "text",
+              "id": "swpf_container_width",
+              "label": "Container Max width",
+              "placeholder": "960px",
+              "default": "1090px"
+          },
+          {
+              "type": "checkbox",
+              "id": "swpf_checkbox",
+              "label": "Full width",
+              "default": false
+          },
+          {
+              "type": "checkbox",
+              "id": "swpf_target",
+              "label": "Open link on current page",
+              "default": false
+          },
+          {
+              "type": "range",
+              "id": "swpf_padding_y",
+              "min": 0,
+              "max": 200,
+              "step": 2,
+              "label": "Container Padding Y Axis",
+              "unit": "px",
+              "default": 50
+          },
+          {
+              "type": "color",
+              "id": "swpf_border_color",
+              "label": "Border color",
+              "default": "#ececec"
+          },
+          {
+              "type": "range",
+              "id": "swpf_margin",
+              "min": 0,
+              "max": 20,
+              "step": 1,
+              "label": "Post spacing",
+              "default": 5
+          },
+          {
+              "type": "range",
+              "id": "swpf_font_size",
+              "min": 5,
+              "max": 70,
+              "step": 1,
+              "unit": "px",
+              "label": "Font size desktop",
+              "default": 16
+          },
+          {
+              "type": "range",
+              "id": "swpf_font_size_sm",
+              "min": 5,
+              "max": 70,
+              "step": 1,
+              "unit": "px",
+              "label": "Font size mobile",
+              "default": 12
+          },
+          {
+              "type": "range",
+              "id": "swpf_font_weight",
+              "min": 100,
+              "max": 900,
+              "step": 100,
+              "label": "Font weight",
+              "default": 600
+          },
+          {
+              "type": "color",
+              "id": "swpf_background_color",
+              "label": "Background color",
+              "default": "#ffffff"
+          },
+          {
+              "type": "color",
+              "id": "swpf_front_color",
+              "label": "Font color",
+              "default": "#ffffff"
+          },
+          {
+              "type": "color",
+              "id": "swpf_overlay",
+              "label": "Overlay color",
+              "default": "#000000"
+          },
+          {
+              "type": "range",
+              "id": "swpf_overlay_opacity",
+              "min": 0,
+              "max": 1,
+              "step": 0.1,
+              "label": "Overlay opacity",
+              "default": 0.2
+          }
+      ]
+  }
+
+
+      {% endschema %}
